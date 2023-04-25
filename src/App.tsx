@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import DashBoard from './Pages/Dashboard/Dashboard';
 
 function App() {
   return (
-    <p className='text-red-700'>Under development</p>
+    <DashBoard/>
   );
 }
 
