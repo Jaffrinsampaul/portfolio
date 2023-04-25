@@ -7,15 +7,15 @@ const DashBoard = () => {
   return (
     <>
       <div
-        className="h-[100vh]"
+        className="h-[100vh] w-full flex flex-col items-center "
         style={{
-          backgroundImage: `url(${Image.RightTriangle})`,
+          backgroundImage: `url(${Image.RightTriangles})`,
           backgroundColor: Colors.BackGround,
           backgroundSize: "18px",
           backgroundRepeat: "space",
         }}
       >
-        <div>
+        <div className="h-[55vh] w-[75%] flex justify-center items-center">
             <Header/>
         </div>
       </div>

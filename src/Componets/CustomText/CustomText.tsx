@@ -1,8 +1,15 @@
 import React from "react";
 
-const CustomText =()=>{
+type Props={
+    text: string,
+    style ?:string
+}
+
+const CustomText =({text, style}:Props)=>{
     return(
-        <></>
+        <>
+        <p className={style}>{text}</p>
+        </>
     )
 }
 
