@@ -2,12 +2,12 @@ import React from "react";
 import { Image } from "../../Utills/Image";
 import { Colors } from "../../Utills/Colors";
 import Header from "../../Container/Header/Header";
+import About from "../../Container/About/About";
 
 const DashBoard = () => {
   return (
-    <>
       <div
-        className="h-[100vh] w-full flex flex-col items-center "
+        className="w-full flex flex-col items-center scrollbar_hidden"
         style={{
           backgroundImage: `url(${Image.RightTriangles})`,
           backgroundColor: Colors.BackGround,
@@ -15,11 +15,13 @@ const DashBoard = () => {
           backgroundRepeat: "space",
         }}
       >
-        <div className="h-[55vh] w-[75%] flex justify-center items-center">
-            <Header/>
+        <div className="h-[75vh] w-[75%] flex justify-center items-center">
+          <Header />
+        </div>
+        <div className="h-[40vh] w-[75%]">
+          <About />
         </div>
       </div>
-    </>
   );
 };
 
