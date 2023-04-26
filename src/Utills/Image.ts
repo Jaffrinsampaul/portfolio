@@ -10,9 +10,10 @@ import Folder from "../Assets/Icons/png/folder.png";
 
 // Profie
 import Crub from "../Assets/main_page_bg_rspack.png";
+import Profile from "../Assets/Images/png/profile.png";
 
 export const Image = {
   RightTriangle, RightTriangles,
   LinkedIn, GitHub, Twitter, Crub,
-  Ribbon, Folder
+  Ribbon, Folder, Profile,
 };

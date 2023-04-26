@@ -4,6 +4,7 @@ import { Colors } from "../../Utills/Colors";
 import { about, aboutCard } from "../../Utills/MockData";
 import { aboutCardType } from "../../Utills/dto";
 import AboutCard from "../../Componets/AboutCard/AboutCard";
+import { Image } from "../../Utills/Image";
 
 const About = () => {
   return (
@@ -16,7 +17,9 @@ const About = () => {
         <div className="flex w-full h-[78%] justify-between items-start">
           <div className="flex w-[38%] h-full justify-center">
             <div className=" h-[80%] profile w-[95%] rounded-[30px] rotate-[-1deg]">
-              <div className="h-[100%] bg-slate-200 w-[100%] rounded-[30px] transition ease-in-out delay-150 duration-300 hover:rotate-2 rotate-[9deg]"></div>
+              <div 
+              style={{background: `url(${Image.Profile})`, backgroundRepeat: "no-repeat", backgroundSize: "cover"}}
+              className="h-[100%] bg-slate-200 w-[100%] rounded-[30px] transition ease-in-out delay-150 duration-300 hover:rotate-2 rotate-[9deg]"></div>
             </div>
 
           </div>
@@ -30,7 +33,7 @@ const About = () => {
                         detail: obj, detailStyle: "text-[#767685] font-semibold text-[13px]",
                         style: `w-[45%] h-[100%] bg-red-200 flex flex-col 
                           justify-evenly items-center rounded-[15px]
-                          bg-[#2C2C6C] text-white font-semibold text-[16px] hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`
+                          bg-[#2c2c6c] text-white font-semibold text-[16px] hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`
                       }} />
                     </>
                   )
