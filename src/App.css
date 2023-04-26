@@ -19,3 +19,10 @@ p{
   display: none;
   /* Safari and Chrome */
 }
+
+
+.profile{
+  /* background-color: rebeccapurple; */
+  background-image: linear-gradient(250deg, transparent, #4CB3FC);
+  /* background: linear-gradient(42deg, transparent,var(red),transparent); */
+}

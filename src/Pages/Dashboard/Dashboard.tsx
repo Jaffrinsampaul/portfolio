@@ -15,10 +15,10 @@ const DashBoard = () => {
           backgroundRepeat: "space",
         }}
       >
-        <div className="h-[75vh] w-[75%] flex justify-center items-center">
+        <div className="h-[65vh] w-[75%] flex justify-center items-center">
           <Header />
         </div>
-        <div className="h-[40vh] w-[75%]">
+        <div className="h-[90vh] w-[75%]">
           <About />
         </div>
       </div>
