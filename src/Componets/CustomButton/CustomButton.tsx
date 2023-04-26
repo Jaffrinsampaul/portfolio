@@ -6,7 +6,7 @@ type Props = {
   buttonBehaviour: {
     btnName: string;
     textStyle ?: string
-    onClick?: Function | any;
+    onClick: Function;
     style: string;
     image?: {
       src: any;
@@ -18,11 +18,12 @@ type Props = {
 };
 
 const CustomButton = ({ buttonBehaviour }: Props) => {
+  console.log(buttonBehaviour)
   return (
     <>
       <div
         className={buttonBehaviour.style}
-        onClick={(event) => buttonBehaviour.onClick(event)}
+        onClick={(event) => buttonBehaviour.onClick()}
       >
         {buttonBehaviour.image && (
           <CustomImage imageBehaviour={buttonBehaviour.image} />

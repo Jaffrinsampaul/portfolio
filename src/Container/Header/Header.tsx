@@ -1,16 +1,34 @@
 import React from "react";
 import { Image } from "../../Utills/Image";
 import CustomImage from "../../Componets/CustomImage/CustomImage";
-import { Colors } from "../../Utills/Colors";
 import CustomText from "../../Componets/CustomText/CustomText";
 import CustomButton from "../../Componets/CustomButton/CustomButton";
 import { Url } from "../../Utills/socialMediaUrl";
+import { Files } from "../../Utills/Files";
+import { staticDetails } from "../../Utills/Staticdetails";
 
 const Header = () => {
   const Icons = [
     { img: Image.LinkedIn, name: Url.linkedIn },
     { img: Image.GitHub, name: Url.gitHub },
+    { img: Image.Twitter, name: Url.twitter }
   ];
+
+
+  function downloadCV() {
+    fetch(Files.ReactAction).then((res) => {
+      res.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = staticDetails.fileName.resume;
+        alink.click();
+      })
+    })
+  }
+
+  function letTalk(){}
 
   return (
     <>
@@ -52,23 +70,24 @@ const Header = () => {
             />
           </div>
           <div className="flex w-[50%] justify-around h-[30%] items-center">
-            <CustomButton
-              buttonBehaviour={{
-                btnName: "Download CV",
-                style:
-                  "w-[140px] h-[55px] flex items-center justify-center hover:bg-white  text-[#4db5ff] transition duration-s hover:duration-150 hover:text-black border border-[#4db5ff] rounded-[10px] ",
-                textStyle: "text-[15px]  font-bold ",
-              }}
-            />
+              <CustomButton
+                buttonBehaviour={{
+                  btnName: "Download CV",
+                  style:
+                    "w-[140px] h-[55px] flex items-center justify-center hover:bg-white  text-[#4db5ff] transition duration-s hover:duration-150 hover:text-black border border-[#4db5ff] rounded-[10px] ",
+                  textStyle: "text-[15px]  font-bold ",
+                  onClick: downloadCV
+                }}
+              />
             <CustomButton
               buttonBehaviour={{
                 btnName: "Let's talk",
+                onClick: letTalk,
                 style:
-                  "w-[100px] h-[55px] flex items-center justify-center  bg-[#4db5ff] rounded-[10px]",
+                  "w-[100px] h-[55px] flex items-center justify-center bg-[#4db5ff] rounded-[10px] hover:bg-white hover:text-black transition duration-s hover:duration-150",
                 textStyle: "text-[15px] font-bold",
               }}
             />
-            {/* <CustomText text="Let's talks" /> */}
           </div>
         </div>
         <div className="flex w-[18%] justify-evenly items-center h-full ">
