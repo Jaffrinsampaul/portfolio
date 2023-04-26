@@ -5,11 +5,14 @@ import RightTriangles from "../Assets/Icons/png/right-arrow-black-triangles.png"
 import LinkedIn from "../Assets/Icons/png/linkedin.png";
 import GitHub from "../Assets/Icons/png/github.png";
 import Twitter from "../Assets/Icons/png/twitter.png";
+import Ribbon from "../Assets/Icons/png/ribbon.png";
+import Folder from "../Assets/Icons/png/folder.png";
 
 // Profie
 import Crub from "../Assets/main_page_bg_rspack.png";
 
 export const Image = {
   RightTriangle, RightTriangles,
-  LinkedIn, GitHub, Twitter, Crub
+  LinkedIn, GitHub, Twitter, Crub,
+  Ribbon, Folder
 };
