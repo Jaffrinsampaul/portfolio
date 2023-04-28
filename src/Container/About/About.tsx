@@ -9,7 +9,7 @@ import { Image } from "../../Utills/Image";
 const About = () => {
   return (
     <>
-      <div className="h-[95%] w-full flex flex-col justify-between">
+      <div className="h-[100%] w-full flex flex-col justify-between">
         <div className="w-full h-[15%]  flex flex-col justify-center items-center">
           <CustomText text="Get to know" style={`text-[${Colors.LightGrey}] text-[15px] font-bold`} />
           <CustomText text="About Me" style={`text-[${Colors.LightBlue}] text-[25px] font-bold`} />
@@ -31,8 +31,8 @@ const About = () => {
                     <>
                       <AboutCard cardBehaviour={{
                         detail: obj, detailStyle: "text-[#767685] font-semibold text-[13px]",
-                        style: `w-[45%] h-[100%] bg-red-200 flex flex-col 
-                          justify-evenly items-center rounded-[15px]
+                        style: `w-[45%] h-[100%] flex flex-col 
+                          justify-evenly items-center rounded-[15px] 
                           bg-[#2c2c6c] text-white font-semibold text-[16px] hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`
                       }} />
                     </>
