@@ -12,6 +12,8 @@ import Verification from "../Assets/Icons/png/verified.png";
 import TwitterWhite from "../Assets/Icons/png/twitterWhite.png";
 import GithubWhite from "../Assets/Icons/png/githubWhite.png";
 import LinkedInWhite from "../Assets/Icons/png/linkedinWhite.png";
+import Mail from "../Assets/Icons/png/email.png";
+import MailWhite from "../Assets/Icons/png/emailWhite.png";
 
 // Profie
 import Crub from "../Assets/main_page_bg_rspack.png";
@@ -22,4 +24,5 @@ export const Image = {
   LinkedIn, GitHub, Twitter, Crub,
   Ribbon, Folder, Profile, Verification,
   TwitterWhite, GithubWhite, LinkedInWhite,
+  Mail, MailWhite
 };

@@ -4,6 +4,7 @@ import CustomText from "../../Componets/CustomText/CustomText";
 import CustomImage from "../../Componets/CustomImage/CustomImage";
 import { Image } from "../../Utills/Image";
 import { Url } from "../../Utills/socialMediaUrl";
+import { mailSubject } from "../../Utills/MockData";
 
 const Footer = () => {
   return (
@@ -76,6 +77,23 @@ const Footer = () => {
                   imageBehaviour={{
                     alt: "linked",
                     src: Image.TwitterWhite,
+                    width: 20,
+                    height: 20,
+                  }}
+                />
+              </div>
+            </a>
+            <a href={`mailto:${Url.mailTo}?subject=${mailSubject}`} target="_blank" rel="noreferrer">
+              <div
+                className="w-[40px] h-[40px] bg-[#1f1f38] flex 
+              justify-center items-center rounded-md transition duration-s hover:duration-150
+               hover:bg-transparent ease-in-out delay-150 duration-300 border border-transparent 
+               hover:border-[#1f1f38]"
+              >
+                <CustomImage
+                  imageBehaviour={{
+                    alt: "linked",
+                    src: Image.MailWhite,
                     width: 20,
                     height: 20,
                   }}

@@ -1,8 +1,8 @@
 import { Image } from "./Image";
 
 export const aboutCard = [
-  { img: Image.Ribbon, title: "Experience", subTitle: "1 year" },
-  { img: Image.Folder, title: "Projects", subTitle: "20+ Completed Projects" }
+  { img: Image.Ribbon, title: "Experience", subTitle: "1.5 year" },
+  { img: Image.Folder, title: "Projects", subTitle: "4 Completed Projects" }
 ];
 
 export const about = `Hi I'm JAFFRIN I happy to see you in my account. 
@@ -62,3 +62,5 @@ export const skills ={
     
   ]
 }
+
+export const mailSubject ="Let's Connect"
