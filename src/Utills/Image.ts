@@ -9,6 +9,10 @@ import Ribbon from "../Assets/Icons/png/ribbon.png";
 import Folder from "../Assets/Icons/png/folder.png";
 import Verification from "../Assets/Icons/png/verified.png";
 
+import TwitterWhite from "../Assets/Icons/png/twitterWhite.png";
+import GithubWhite from "../Assets/Icons/png/githubWhite.png";
+import LinkedInWhite from "../Assets/Icons/png/linkedinWhite.png";
+
 // Profie
 import Crub from "../Assets/main_page_bg_rspack.png";
 import Profile from "../Assets/Images/png/profile.png";
@@ -17,4 +21,5 @@ export const Image = {
   RightTriangle, RightTriangles,
   LinkedIn, GitHub, Twitter, Crub,
   Ribbon, Folder, Profile, Verification,
+  TwitterWhite, GithubWhite, LinkedInWhite,
 };

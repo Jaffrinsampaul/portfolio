@@ -36,6 +36,10 @@ export const skills ={
     {
       img: Image.Verification,
       name: "Tailwind",
+    },
+    {
+      img: Image.Verification,
+      name: "React Native",
     }
   ],
   backEnd: [
@@ -54,6 +58,7 @@ export const skills ={
     {
       img: Image.Verification,
       name: "Git/GitHub",
-    }
+    },
+    
   ]
 }
