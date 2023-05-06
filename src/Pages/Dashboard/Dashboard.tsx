@@ -10,7 +10,6 @@ import Experience from "../../Container/Experience/Experience";
 const DashBoard = () => {
   return (
       <div
-      id="mainDiv"
         className="w-full flex flex-col items-center scrollbar_hidden"
         style={{
           backgroundImage: `url(${Image.RightTriangles})`,
@@ -31,7 +30,7 @@ const DashBoard = () => {
         <div className="h-[70vh] w-[75%] flex justify-center items-center" id="Experience">
           <Experience/>
         </div>
-        <div className="h-[70vh] w-full flex justify-end items-end">
+        <div className="h-[70vh] w-full flex justify-end items-end" id="Footer">
           <Footer/>
         </div>
       </div>
