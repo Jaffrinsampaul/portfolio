@@ -19,10 +19,12 @@ import MailWhite from "../Assets/Icons/png/emailWhite.png";
 import Crub from "../Assets/main_page_bg_rspack.png";
 import Profile from "../Assets/Images/png/profile.png";
 
+import ABS from "../Assets/Images/jpeg-jpg/abs.jpeg";
+
 export const Image = {
   RightTriangle, RightTriangles,
   LinkedIn, GitHub, Twitter, Crub,
   Ribbon, Folder, Profile, Verification,
   TwitterWhite, GithubWhite, LinkedInWhite,
-  Mail, MailWhite
+  Mail, MailWhite, ABS,
 };

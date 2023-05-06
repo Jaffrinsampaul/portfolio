@@ -5,6 +5,7 @@ import Header from "../../Container/Header/Header";
 import About from "../../Container/About/About";
 import Skill from "../../Container/Skill/Skill";
 import Footer from "../../Container/Footer/Footer";
+import Experience from "../../Container/Experience/Experience";
 
 const DashBoard = () => {
   return (
@@ -25,6 +26,9 @@ const DashBoard = () => {
         </div>
         <div className="h-[60vh] w-[75%] flex justify-center items-center">
           <Skill/>
+        </div>
+        <div className="h-[70vh] w-[75%] flex justify-center items-center ">
+          <Experience/>
         </div>
         <div className="h-[70vh] w-full flex justify-end items-end">
           <Footer/>

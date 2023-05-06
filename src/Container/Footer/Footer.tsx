@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className={`h-[80%] w-full bg-[${Colors.SkyBlue}] flex flex-col items-center`}
+        className={`h-[90%] w-full bg-[${Colors.SkyBlue}] flex flex-col items-center`}
       >
         <div className="w-[45%] h-full flex flex-col items-center ">
           <div className="h-[30%] w-full flex justify-center items-center">
