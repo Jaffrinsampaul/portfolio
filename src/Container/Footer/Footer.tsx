@@ -5,16 +5,16 @@ import CustomImage from "../../Componets/CustomImage/CustomImage";
 import { Image } from "../../Utills/Image";
 import { Url } from "../../Utills/socialMediaUrl";
 import { mailSubject } from "../../Utills/MockData";
+import navigateToDiv from "../../Utills/navigate";
 
 const Footer = () => {
-  function navigateToDiv(tagName: string) {
-    const tagOffset: any = document.getElementById(tagName)?.offsetTop;
-    document.getElementById("#mainDiv");
-    window.scrollTo({
-      top: tagOffset - 100,
-      behavior: "smooth",
-    });
-  }
+  // function navigateToDiv(tagName: string) {
+  //   const tagOffset: any = document.getElementById(tagName)?.offsetTop;
+  //   window.scrollTo({
+  //     top: tagOffset - 100,
+  //     behavior: "smooth",
+  //   });
+  // }
   return (
     <>
       <div
