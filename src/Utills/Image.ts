@@ -14,6 +14,10 @@ import GithubWhite from "../Assets/Icons/png/githubWhite.png";
 import LinkedInWhite from "../Assets/Icons/png/linkedinWhite.png";
 import Mail from "../Assets/Icons/png/email.png";
 import MailWhite from "../Assets/Icons/png/emailWhite.png";
+import User from "../Assets/Icons/png/user.png";
+import Home from "../Assets/Icons/png/home.png";
+import Category from "../Assets/Icons/png/category.png";
+import Skill from "../Assets/Icons/png/skills.png";
 
 // Profie
 import Crub from "../Assets/main_page_bg_rspack.png";
@@ -26,5 +30,6 @@ export const Image = {
   LinkedIn, GitHub, Twitter, Crub,
   Ribbon, Folder, Profile, Verification,
   TwitterWhite, GithubWhite, LinkedInWhite,
-  Mail, MailWhite, ABS,
+  Mail, MailWhite, ABS, User, Home, Category,
+  Skill,
 };

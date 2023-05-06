@@ -6,6 +6,7 @@ import About from "../../Container/About/About";
 import Skill from "../../Container/Skill/Skill";
 import Footer from "../../Container/Footer/Footer";
 import Experience from "../../Container/Experience/Experience";
+import Navbar from "../../Container/NavBar/NavBar";
 
 const DashBoard = () => {
   return (
@@ -33,6 +34,7 @@ const DashBoard = () => {
         <div className="h-[70vh] w-full flex justify-end items-end" id="Footer">
           <Footer/>
         </div>
+        <Navbar/>
       </div>
   );
 };
