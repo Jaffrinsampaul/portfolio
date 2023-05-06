@@ -15,11 +15,11 @@ export const skills = {
   frontEnd: [
     {
       img: Image.Verification,
-      name: "HTML",
+      name: "HTML 5",
     },
     {
       img: Image.Verification,
-      name: "CSS",
+      name: "CSS 3",
     },
     {
       img: Image.Verification,
@@ -31,7 +31,7 @@ export const skills = {
     },
     {
       img: Image.Verification,
-      name: "Redux",
+      name: "React Native",
     },
     {
       img: Image.Verification,
@@ -39,8 +39,17 @@ export const skills = {
     },
     {
       img: Image.Verification,
-      name: "React Native",
+      name: "Prime Flex",
     },
+    {
+      img: Image.Verification,
+      name: "Prime React",
+    },
+    {
+      img: Image.Verification,
+      name: "Material UI",
+    },
+   
   ],
   backEnd: [
     {
