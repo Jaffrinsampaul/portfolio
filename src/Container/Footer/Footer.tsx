@@ -7,6 +7,14 @@ import { Url } from "../../Utills/socialMediaUrl";
 import { mailSubject } from "../../Utills/MockData";
 
 const Footer = () => {
+  function navigateToDiv(tagName: string) {
+    const tagOffset: any = document.getElementById(tagName)?.offsetTop;
+    document.getElementById("#mainDiv");
+    window.scrollTo({
+      top: tagOffset - 100,
+      behavior: "smooth",
+    });
+  }
   return (
     <>
       <div
@@ -20,18 +28,30 @@ const Footer = () => {
             />
           </div>
           <div className="w-[70%] h-[20%] flex justify-evenly ">
-            <CustomText
-              text="Home"
-              style="transition duration-s hover:duration-150 hover:text-white text-[17px] cursor-pointer"
-            />
-            <CustomText
-              text="About"
-              style="transition duration-s hover:duration-150 hover:text-white text-[17px] cursor-pointer"
-            />
-            <CustomText
-              text="Skills"
-              style="transition duration-s hover:duration-150 hover:text-white text-[17px] cursor-pointer"
-            />
+            <div onClick={() => navigateToDiv("Home")}>
+              <CustomText
+                text="Home"
+                style="transition duration-s hover:duration-150 hover:text-white text-[17px] cursor-pointer"
+              />
+            </div>
+            <div onClick={() => navigateToDiv("About")}>
+              <CustomText
+                text="About"
+                style="transition duration-s hover:duration-150 hover:text-white text-[17px] cursor-pointer"
+              />
+            </div>
+            <div onClick={() => navigateToDiv("Skill")}>
+              <CustomText
+                text="Skills"
+                style="transition duration-s hover:duration-150 hover:text-white text-[17px] cursor-pointer"
+              />
+            </div>
+            <div onClick={() => navigateToDiv("Experience")}>
+              <CustomText
+                text="Experience"
+                style="transition duration-s hover:duration-150 hover:text-white text-[17px] cursor-pointer"
+              />
+            </div>
           </div>
           <div className="w-[35%] flex justify-evenly">
             <a href={Url.linkedIn} target="_blank" rel="noreferrer">
@@ -83,7 +103,11 @@ const Footer = () => {
                 />
               </div>
             </a>
-            <a href={`mailto:${Url.mailTo}?subject=${mailSubject}`} target="_blank" rel="noreferrer">
+            <a
+              href={`mailto:${Url.mailTo}?subject=${mailSubject}`}
+              target="_blank"
+              rel="noreferrer"
+            >
               <div
                 className="w-[40px] h-[40px] bg-[#1f1f38] flex 
               justify-center items-center rounded-md transition duration-s hover:duration-150
@@ -101,8 +125,14 @@ const Footer = () => {
               </div>
             </a>
           </div>
-          <div className=" flex justify-center items-end" style={{height:"15%"}}>
-            <CustomText text="©Jaffrin 2023.All rights reserved." style="text-sm"/>
+          <div
+            className=" flex justify-center items-end"
+            style={{ height: "15%" }}
+          >
+            <CustomText
+              text="©Jaffrin 2023.All rights reserved."
+              style="text-sm"
+            />
           </div>
         </div>
       </div>
