@@ -12,12 +12,12 @@ const SkillCard = ({ cardBehaviour }: skillCardType) => {
         hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`}
       >
         <div
-          className={`h-[25%] flex justify-center 
+          className={`h-[20%] flex justify-center 
         items-center text-[${Colors.LightBlue}] font-semibold text-[18px]`}
         >
           <CustomText text={cardBehaviour.title} />
         </div>
-        <div className="flex w-[80%] h-[70%] flex-wrap justify-start items-start ">
+        <div className="flex w-[80%] h-[75%] flex-wrap justify-start items-start ">
           {cardBehaviour.content.map((obj: skillCardDetails) => {
             return (
               <div className={`w-[50%] flex h-[50px] items-center text-white`}>
