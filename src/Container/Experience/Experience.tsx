@@ -22,7 +22,7 @@ const Experience = () => {
                 hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`}
                 key={index}
               >
-                <div className="w-[15%] h-[170px] flex justify-center items-center">
+                <div className="w-[15%] h-[80%] flex justify-center items-center">
                   <a href={obj.companyWebsite} target="_blank">
                     <CustomImage
                       imageBehaviour={{
@@ -63,7 +63,7 @@ const Experience = () => {
                               />
                             </div>
                             {obj.roles.length - 1 !== index && (
-                              <div className="w-[30%] justify-center items-center flex pt-3">
+                              <div className="w-[68%] justify-center items-center flex pt-5">
                                 <div
                                   className={`bg-white w-[2px] h-[25px] rounded bg-opacity-60 `}
                                 ></div>
