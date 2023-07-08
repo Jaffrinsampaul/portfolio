@@ -9,7 +9,7 @@ const SkillCard = ({ cardBehaviour }: skillCardType) => {
     <>
       <div
         className={`bg-[${Colors.NavyBlue}] w-[45%] sm:mt-1 sm:w-[100%] 
-        ${cardBehaviour.title==="Back-end Development"? "sm:h-[30%]":"sm:h-[50%]"} 
+        ${cardBehaviour.title==="Back-end Development"? "sm:h-[40%]":"sm:h-[50%]"} 
         h-full flex flex-col justify-evenly items-center rounded-[25px] 
         hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`}
       >

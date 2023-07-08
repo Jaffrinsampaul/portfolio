@@ -18,7 +18,7 @@ const Skill = () => {
             style={`text-[${Colors.LightBlue}] text-[26px]`}
           />
         </div> 
-        <div className="flex sm:flex-col sm:w-[100%] justify-between h-[70%] sm:h-[90%] sm:justify-evenly">
+        <div className="flex sm:flex-col sm:w-[100%] justify-between h-[70%] sm:h-[90%] sm:justify-between">
           <SkillCard
             cardBehaviour={{
               content: skills.frontEnd,
