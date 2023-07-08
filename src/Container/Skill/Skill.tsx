@@ -8,7 +8,7 @@ const Skill = () => {
   return (
     <>
       <div className="h-[100%] w-full flex flex-col justify-between">
-        <div className="text-center h-[25%] flex flex-col justify-evenly">
+        <div className="text-center sm:h-[5%] h-[25%] flex flex-col justify-evenly">
           <CustomText
             text="The Skills I Have"
             style={`text-[${Colors.LightGrey}] text-[19px]`}
@@ -17,8 +17,8 @@ const Skill = () => {
             text="skills"
             style={`text-[${Colors.LightBlue}] text-[26px]`}
           />
-        </div>
-        <div className="flex justify-between h-[70%]">
+        </div> 
+        <div className="flex sm:flex-col sm:w-[100%] justify-between h-[70%] sm:h-[90%] sm:justify-evenly">
           <SkillCard
             cardBehaviour={{
               content: skills.frontEnd,

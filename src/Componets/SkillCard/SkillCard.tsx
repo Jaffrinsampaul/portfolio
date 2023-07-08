@@ -8,7 +8,9 @@ const SkillCard = ({ cardBehaviour }: skillCardType) => {
   return (
     <>
       <div
-        className={`bg-[${Colors.NavyBlue}] w-[45%] h-full flex flex-col justify-evenly items-center rounded-[25px] 
+        className={`bg-[${Colors.NavyBlue}] w-[45%] sm:mt-1 sm:w-[100%] 
+        ${cardBehaviour.title==="Back-end Development"? "sm:h-[30%]":"sm:h-[50%]"} 
+        h-full flex flex-col justify-evenly items-center rounded-[25px] 
         hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`}
       >
         <div
@@ -17,7 +19,8 @@ const SkillCard = ({ cardBehaviour }: skillCardType) => {
         >
           <CustomText text={cardBehaviour.title} />
         </div>
-        <div className="flex w-[80%] h-[75%] flex-wrap justify-start items-start ">
+        <div
+          className={`flex w-[80%] h-[75%] sm:h-[70%] flex-wrap justify-start items-start `}>
           {cardBehaviour.content.map((obj: skillCardDetails) => {
             return (
               <div className={`w-[50%] flex h-[50px] items-center text-white`}>
