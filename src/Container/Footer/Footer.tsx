@@ -20,14 +20,14 @@ const Footer = () => {
       <div
         className={`h-[90%] w-full bg-[${Colors.SkyBlue}] flex flex-col items-center`}
       >
-        <div className="w-[45%] h-full flex flex-col items-center">
+        <div className="w-[45%] h-full flex flex-col items-center ">
           <div className="h-[30%] w-full flex justify-center items-center">
             <CustomText
               text="Jaffrin Sampaul"
               style="transition duration-s hover:duration-150 hover:text-white text-[24px] cursor-pointer"
             />
           </div>
-          <div className="w-[70%] h-[20%] flex justify-evenly sm:w-[100%]">
+          <div className="w-[70%] h-[20%] flex justify-evenly ">
             <div onClick={() => navigateToDiv("Home")}>
               <CustomText
                 text="Home"
@@ -53,7 +53,7 @@ const Footer = () => {
               />
             </div>
           </div>
-          <div className="w-[35%] flex justify-evenly sm:w-[100%]">
+          <div className="w-[35%] flex justify-evenly">
             <a href={Url.linkedIn} target="_blank" rel="noreferrer">
               <div
                 className="w-[40px] h-[40px] bg-[#1f1f38] flex justify-center items-center 
