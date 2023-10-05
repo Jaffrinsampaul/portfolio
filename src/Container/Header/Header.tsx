@@ -76,7 +76,7 @@ const Header = () => {
               style="text-[#4db5ff] text-[11px] font-extrabold"
             />
           </div>
-          <div className="flex w-[60%] sm:w-[70%] justify-around h-[30%] items-center">
+          <div className="flex w-[60%] justify-around h-[30%] items-center">
             <CustomButton
               buttonBehaviour={{
                 btnName: "Download CV",
