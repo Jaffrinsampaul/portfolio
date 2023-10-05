@@ -25,12 +25,10 @@ const DashBoard = () => {
         <div className="h-[80vh] w-[75%] sm:w-[90%] sm:h-[40vh]" id="About">
           <About />
         </div>
-        <div className="lg:h-[60vh] md:h-[50vh] sm:h-[90vh] w-[75%] flex justify-center items-center" id="Skill">
+        <div className="h-[60vh] sm:h-[90vh] w-[75%] flex justify-center items-center" id="Skill">
           <Skill/>
         </div>
-        <div className="h-[70vh] sm:h-[50vh] w-[75%] md:w-[65%] lg:w-[100%] xl:w-[90%] 2xl:w-[100%]
-        2xl:h-[75vh] xl:h-[75vh] lg:h-[75vh] md:h-[55vh]
-         flex justify-center items-center" id="Experience">
+        <div className="h-[70vh] sm:h-[35vh] w-[75%] flex justify-center items-center" id="Experience">
           <Experience/>
         </div>
         <div className="h-[70vh] sm:h-[40vh] w-full flex justify-end items-end" id="Footer">

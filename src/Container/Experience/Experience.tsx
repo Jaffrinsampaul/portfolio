@@ -6,20 +6,19 @@ import CustomImage from "../../Componets/CustomImage/CustomImage";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col w-full lg:w-[50%] 2xl:w-[40%] md:w-[80%] sm:w-[85%] 2xl:h-[90%] h-[90%] sm:h-[100%] items-center justify-around">
+    <div className="flex flex-col w-full h-[90%] sm:h-[100%] items-center justify-around">
       <div className="h-[20%] w-full flex justify-center items-center">
         <CustomText
           text="Experience"
           style={`text-[${Colors.SkyBlue}] text-[19px]`}
         />
       </div>
-      <div className="h-[70%] sm:h-[65%] min-[375px]:h-[55%] w-full flex flex-col justify-center items-center">
+      <div className="h-[70%] sm:h-[65%] w-full flex flex-col justify-center items-center">
         {experienceDetails.map((obj, index) => {
           return (
             <>
               <div
-                className={`flex w-[50%] sm:w-[100%] 2xl:w-[80%] lg:w-[100%] min-[375px]:w-[100%]
-                 h-full justify-evenly pt-4 bg-[${Colors.NavyBlue}] rounded-[25px] cursor-pointer
+                className={`flex w-[50%] sm:w-[100%] h-full justify-evenly pt-4 bg-[${Colors.NavyBlue}] rounded-[25px] cursor-pointer
                 hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`}
                 key={index}
               >
@@ -40,14 +39,12 @@ const Experience = () => {
                     <a href={obj.companyWebsite} target="_blank">
                       <CustomText
                         text={obj.companyName}
-                        style={`text-[${Colors.SkyBlue}] hover:text-white
-                        sm:text-[18px] lg:text-[25px] min-[375px]:text-[11px] 2xl:text-[27px] min-[1921]:text-[20px]`}
+                        style={`text-[${Colors.SkyBlue}] text-[19px] hover:text-white text-[25px] sm:text-[18px]`}
                       />
                     </a>
                     <CustomText
                       text={obj.companyLocation}
-                      style={`text-[${Colors.LightGrey}] text-[19px] hover:text-white 
-                      text-[13px] sm:text-[12px] lg:text-[15px] min-[375px]:text-[8px]`}
+                      style={`text-[${Colors.LightGrey}] text-[19px] hover:text-white text-[13px] sm:text-[12px]`}
                     />
                   </div>
                   <div className="h-[60%] w-full flex flex-col justify-evenly">
@@ -58,19 +55,17 @@ const Experience = () => {
                             <div>
                               <CustomText
                                 text={roles.role}
-                                style={`text-[${Colors.SkyBlue}] text-[19px] hover:text-white 
-                                sm:text-[13px] lg:text-[17px] min-[375px]:text-[11px]`}
+                                style={`text-[${Colors.SkyBlue}] text-[19px] hover:text-white sm:text-[13px]`}
                               />
                               <CustomText
                                 text={roles.period}
-                                style={`text-[${Colors.LightGrey}] text-[19px] hover:text-white text-[12px]
-                                 sm:text-[10px] lg:text-[13px] min-[375px]:text-[9px]`}
+                                style={`text-[${Colors.LightGrey}] text-[19px] hover:text-white text-[12px] sm:text-[10px]`}
                               />
                             </div>
                             {obj.roles.length - 1 !== index && (
                               <div className="w-[68%] justify-center items-center flex pt-5">
                                 <div
-                                  className={`bg-white w-[2px] h-[25px] rounded bg-opacity-60 sm:h-[20px] min-[375px]:h-[11px]`}
+                                  className={`bg-white w-[2px] h-[25px] rounded bg-opacity-60 sm:h-[20px]`}
                                 ></div>
                               </div>
                             )}

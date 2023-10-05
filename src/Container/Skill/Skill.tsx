@@ -17,11 +17,8 @@ const Skill = () => {
             text="skills"
             style={`text-[${Colors.LightBlue}] text-[26px]`}
           />
-        </div>
-        <div
-          className="flex lg:flex-row sm:flex-col sm:w-[100%] lg:justify-between lg:items-center lg:h-[80%] 
-        sm:h-[90%] sm:justify-between md:justify-between md:h-[85%]"
-        >
+        </div> 
+        <div className="flex sm:flex-col sm:w-[100%] justify-between h-[70%] sm:h-[90%] sm:justify-between">
           <SkillCard
             cardBehaviour={{
               content: skills.frontEnd,
@@ -33,7 +30,7 @@ const Skill = () => {
               },
             }}
           />
-          <SkillCard
+           <SkillCard
             cardBehaviour={{
               content: skills.backEnd,
               title: "Back-end Development",
