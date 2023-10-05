@@ -31,7 +31,7 @@ const DashBoard = () => {
         <div className="h-[70vh] w-[75%] flex justify-center items-center" id="Experience">
           <Experience/>
         </div>
-        <div className="h-[70vh] sm:h-[40vh] w-full flex justify-end items-end" id="Footer">
+        <div className="h-[70vh] w-full flex justify-end items-end" id="Footer">
           <Footer/>
         </div>
         <Navbar/>

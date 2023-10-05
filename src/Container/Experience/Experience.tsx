@@ -6,7 +6,7 @@ import CustomImage from "../../Componets/CustomImage/CustomImage";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col w-full h-[90%] sm:h-[100%] items-center justify-around">
+    <div className="flex flex-col w-full h-[90%] items-center justify-around">
       <div className="h-[20%] w-full flex justify-center items-center">
         <CustomText
           text="Experience"
