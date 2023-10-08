@@ -1,6 +1,12 @@
 import { Colors } from "./Colors";
 import { Files } from "./Files";
-import { skills, aboutCard, experienceDetails, mailSubject , about} from "./MockData";
+import {
+  skills,
+  aboutCard,
+  experienceDetails,
+  mailSubject,
+  about,
+} from "./MockData";
 import { staticDetails } from "./Staticdetails";
 import navigateToDiv from "./navigate";
 import { Url } from "./socialMediaUrl";
@@ -15,5 +21,5 @@ export {
   experienceDetails,
   mailSubject,
   navigateToDiv,
-  about
+  about,
 };
