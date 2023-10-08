@@ -1,17 +1,17 @@
 import React from "react";
-import { Image } from "../../Utills/Image";
 import CustomImage from "../../Componets/CustomImage/CustomImage";
 import CustomText from "../../Componets/CustomText/CustomText";
 import CustomButton from "../../Componets/CustomButton/CustomButton";
 import { Url } from "../../Utills/socialMediaUrl";
 import { Files } from "../../Utills/Files";
 import { staticDetails } from "../../Utills/Staticdetails";
+import { github, linkedIn, twitter } from "../../Assets";
 
 const Header = () => {
   const Icons = [
-    { img: Image.LinkedIn, name: Url.linkedIn },
-    { img: Image.GitHub, name: Url.gitHub },
-    { img: Image.Twitter, name: Url.twitter },
+    { img: linkedIn, name: Url.linkedIn },
+    { img: github, name: Url.gitHub },
+    { img: twitter, name: Url.twitter },
   ];
 
   function scrollTo() {

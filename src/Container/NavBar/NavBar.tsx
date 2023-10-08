@@ -1,14 +1,14 @@
 import React from "react";
-import { Image } from "../../Utills/Image";
 import CustomImage from "../../Componets/CustomImage/CustomImage";
 import navigateToDiv from "../../Utills/navigate";
+import { category, home, skill, user } from "../../Assets";
 
 const Navbar = () => {
   const button = [
-    { icons: Image.Home, navigateTo: "Home" },
-    { icons: Image.User, navigateTo: "About" },
-    { icons: Image.Skill, navigateTo: "Skill" },
-    { icons: Image.Category, navigateTo: "Experience" },
+    { icons: home, navigateTo: "Home" },
+    { icons: user, navigateTo: "About" },
+    { icons: skill, navigateTo: "Skill" },
+    { icons: category, navigateTo: "Experience" },
   ];
   return (
     <>

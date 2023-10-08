@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from "../../Utills/Image";
 import { Colors } from "../../Utills/Colors";
 import Header from "../../Container/Header/Header";
 import About from "../../Container/About/About";
@@ -7,13 +6,14 @@ import Skill from "../../Container/Skill/Skill";
 import Footer from "../../Container/Footer/Footer";
 import Experience from "../../Container/Experience/Experience";
 import Navbar from "../../Container/NavBar/NavBar";
+import { rightArrowBlackTriangles } from "../../Assets";
 
 const DashBoard = () => {
   return (
       <div
         className="w-full flex flex-col items-center scrollbar_hidden"
         style={{
-          backgroundImage: `url(${Image.RightTriangles})`,
+          backgroundImage: `url(${rightArrowBlackTriangles})`,
           backgroundColor: Colors.BackGround,
           backgroundSize: "18px",
           backgroundRepeat: "space",

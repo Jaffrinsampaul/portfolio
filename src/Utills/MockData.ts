@@ -1,8 +1,8 @@
-import { Image } from "./Image";
+import { abs, folder, ribbon, verified } from "../Assets";
 
 export const aboutCard = [
-  { img: Image.Ribbon, title: "Experience", subTitle: "1.5 year" },
-  { img: Image.Folder, title: "Projects", subTitle: "4 Completed Projects" },
+  { img: ribbon, title: "Experience", subTitle: "1.5 year" },
+  { img: folder, title: "Projects", subTitle: "4 Completed Projects" },
 ];
 
 export const about = `Hi I'm JAFFRIN I happy to see you in my account. 
@@ -14,58 +14,58 @@ chat bot application. And I'm looking for new job`;
 export const skills = {
   frontEnd: [
     {
-      img: Image.Verification,
+      img: verified,
       name: "HTML 5",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "CSS 3",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "JavaScript",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "React",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "React Native",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "Tailwind",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "Prime Flex",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "Prime React",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "Material UI",
     },
    
   ],
   backEnd: [
     {
-      img: Image.Verification,
+      img: verified,
       name: "Nest JS",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "PostgresSQL",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "Swagger",
     },
     {
-      img: Image.Verification,
+      img: verified,
       name: "Git/GitHub",
     },
   ],
@@ -74,7 +74,7 @@ export const skills = {
 export const experienceDetails = [
   {
     companyName: "Alpha Bussiness Solutions",
-    companyLogo: Image.ABS,
+    companyLogo: abs,
     companyWebsite: "https://alphabsolutions.com/",
     companyLocation: "Tirunelveli",
     roles: [

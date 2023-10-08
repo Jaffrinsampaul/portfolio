@@ -2,10 +2,10 @@ import React from "react";
 import { Colors } from "../../Utills/Colors";
 import CustomText from "../../Componets/CustomText/CustomText";
 import CustomImage from "../../Componets/CustomImage/CustomImage";
-import { Image } from "../../Utills/Image";
 import { Url } from "../../Utills/socialMediaUrl";
 import { mailSubject } from "../../Utills/MockData";
 import navigateToDiv from "../../Utills/navigate";
+import { emailWhite, githubWhite, linkedInWhite, twitterWhite } from "../../Assets";
 
 const Footer = () => {
   // function navigateToDiv(tagName: string) {
@@ -63,7 +63,7 @@ const Footer = () => {
                 <CustomImage
                   imageBehaviour={{
                     alt: "linked",
-                    src: Image.LinkedInWhite,
+                    src: linkedInWhite,
                     width: 20,
                     height: 20,
                   }}
@@ -79,7 +79,7 @@ const Footer = () => {
                 <CustomImage
                   imageBehaviour={{
                     alt: "linked",
-                    src: Image.GithubWhite,
+                    src: githubWhite,
                     width: 20,
                     height: 20,
                   }}
@@ -96,7 +96,7 @@ const Footer = () => {
                 <CustomImage
                   imageBehaviour={{
                     alt: "linked",
-                    src: Image.TwitterWhite,
+                    src: twitterWhite,
                     width: 20,
                     height: 20,
                   }}
@@ -117,7 +117,7 @@ const Footer = () => {
                 <CustomImage
                   imageBehaviour={{
                     alt: "linked",
-                    src: Image.MailWhite,
+                    src: emailWhite,
                     width: 20,
                     height: 20,
                   }}
