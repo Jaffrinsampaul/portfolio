@@ -1,11 +1,7 @@
 import React from "react";
-import CustomImage from "../../Componets/CustomImage/CustomImage";
-import CustomText from "../../Componets/CustomText/CustomText";
-import CustomButton from "../../Componets/CustomButton/CustomButton";
-import { Url } from "../../Utills/socialMediaUrl";
-import { Files } from "../../Utills/Files";
-import { staticDetails } from "../../Utills/Staticdetails";
 import { github, linkedIn, twitter } from "../../Assets";
+import { Files, Url, staticDetails } from "../../Utills";
+import { CustomButton, CustomImage, CustomText } from "../../Componets";
 
 const Header = () => {
   const Icons = [

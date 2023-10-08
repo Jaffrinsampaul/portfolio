@@ -1,7 +1,7 @@
 import React from "react";
-import CustomImage from "../../Componets/CustomImage/CustomImage";
-import navigateToDiv from "../../Utills/navigate";
 import { category, home, skill, user } from "../../Assets";
+import { navigateToDiv } from "../../Utills";
+import { CustomImage } from "../../Componets";
 
 const Navbar = () => {
   const button = [

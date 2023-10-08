@@ -1,8 +1,6 @@
 import React from "react";
-import CustomText from "../CustomText/CustomText";
 import { aboutCardType } from "../../Utills/dto";
-import CustomImage from "../CustomImage/CustomImage";
-
+import { CustomImage, CustomText } from "../../Componets";
 type Props = {
   cardBehaviour: {
     detail: aboutCardType;

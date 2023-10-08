@@ -1,20 +1,9 @@
 import React from "react";
-import { Colors } from "../../Utills/Colors";
-import CustomText from "../../Componets/CustomText/CustomText";
-import CustomImage from "../../Componets/CustomImage/CustomImage";
-import { Url } from "../../Utills/socialMediaUrl";
-import { mailSubject } from "../../Utills/MockData";
-import navigateToDiv from "../../Utills/navigate";
 import { emailWhite, githubWhite, linkedInWhite, twitterWhite } from "../../Assets";
+import { Colors, Url, mailSubject, navigateToDiv } from "../../Utills";
+import { CustomImage, CustomText } from "../../Componets";
 
 const Footer = () => {
-  // function navigateToDiv(tagName: string) {
-  //   const tagOffset: any = document.getElementById(tagName)?.offsetTop;
-  //   window.scrollTo({
-  //     top: tagOffset - 100,
-  //     behavior: "smooth",
-  //   });
-  // }
   return (
     <>
       <div

@@ -1,8 +1,6 @@
 import React from "react";
-import CustomText from "../../Componets/CustomText/CustomText";
-import { Colors } from "../../Utills/Colors";
-import SkillCard from "../../Componets/SkillCard/SkillCard";
-import { skills } from "../../Utills/MockData";
+import { Colors, skills } from "../../Utills";
+import { CustomText, SkillCard } from "../../Componets";
 
 const Skill = () => {
   return (

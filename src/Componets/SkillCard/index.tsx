@@ -1,8 +1,7 @@
 import React from "react";
 import { skillCardDetails, skillCardType } from "../../Utills/dto";
-import CustomImage from "../CustomImage/CustomImage";
-import CustomText from "../CustomText/CustomText";
-import { Colors } from "../../Utills/Colors";
+import { Colors } from "../../Utills";
+import { CustomText, CustomImage } from "../../Componets";
 
 const SkillCard = ({ cardBehaviour }: skillCardType) => {
   return (

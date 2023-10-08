@@ -1,11 +1,10 @@
 import React from "react";
-import CustomImage from "../CustomImage/CustomImage";
-import CustomText from "../CustomText/CustomText";
+import { CustomImage, CustomText } from "../../Componets";
 
 type Props = {
   buttonBehaviour: {
     btnName: string;
-    textStyle ?: string
+    textStyle?: string;
     onClick: Function;
     style: string;
     image?: {
@@ -18,7 +17,7 @@ type Props = {
 };
 
 const CustomButton = ({ buttonBehaviour }: Props) => {
-  console.log(buttonBehaviour)
+  console.log(buttonBehaviour);
   return (
     <>
       <div
@@ -28,7 +27,10 @@ const CustomButton = ({ buttonBehaviour }: Props) => {
         {buttonBehaviour.image && (
           <CustomImage imageBehaviour={buttonBehaviour.image} />
         )}
-        <CustomText text={buttonBehaviour.btnName} style={buttonBehaviour.textStyle}/>
+        <CustomText
+          text={buttonBehaviour.btnName}
+          style={buttonBehaviour.textStyle}
+        />
       </div>
     </>
   );

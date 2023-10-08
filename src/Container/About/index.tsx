@@ -1,10 +1,8 @@
 import React from "react";
-import CustomText from "../../Componets/CustomText/CustomText";
-import { Colors } from "../../Utills/Colors";
-import { about, aboutCard } from "../../Utills/MockData";
 import { aboutCardType } from "../../Utills/dto";
-import AboutCard from "../../Componets/AboutCard/AboutCard";
 import { profile } from "../../Assets";
+import { AboutCard, CustomText } from "../../Componets";
+import { Colors, aboutCard, about } from "../../Utills";
 
 const About = () => {
   return (

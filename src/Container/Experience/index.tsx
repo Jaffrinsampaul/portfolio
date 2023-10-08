@@ -1,8 +1,6 @@
 import React from "react";
-import CustomText from "../../Componets/CustomText/CustomText";
-import { Colors } from "../../Utills/Colors";
-import { experienceDetails } from "../../Utills/MockData";
-import CustomImage from "../../Componets/CustomImage/CustomImage";
+import { Colors, experienceDetails } from "../../Utills";
+import { CustomImage, CustomText } from "../../Componets";
 
 const Experience = () => {
   return (
