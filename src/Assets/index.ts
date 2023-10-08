@@ -12,7 +12,7 @@ import ribbon from "./Icons/png/ribbon.png";
 import rightArrowBlackTriangle from "./Icons/png/right-arrow-black-triangle.png";
 import rightArrowBlackTriangles from "./Icons/png/right-arrow-black-triangles.png";
 import skill from "./Icons/png/skills.png";
-import twitterWhite from "./Icons/png/twitter.png";
+import twitterWhite from "./Icons/png/twitterWhite.png";
 import twitter from "./Icons/png/twitter.png";
 import user from "./Icons/png/user.png";
 import verified from "./Icons/png/verified.png";
