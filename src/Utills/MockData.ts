@@ -1,7 +1,7 @@
 import { abs, folder, ribbon, verified } from "../Assets";
 
 export const aboutCard = [
-  { img: ribbon, title: "Experience", subTitle: "1.5 year" },
+  { img: ribbon, title: "Experience", subTitle: "1.6 year" },
   { img: folder, title: "Projects", subTitle: "4 Completed Projects" },
 ];
 
@@ -49,6 +49,10 @@ export const skills = {
       img: verified,
       name: "Material UI",
     },
+    {
+      img: verified,
+      name: "Next JS",
+    },
    
   ],
   backEnd: [
@@ -88,6 +92,7 @@ export const experienceDetails = [
       },
     ],
   },
+  
   
 ];
 

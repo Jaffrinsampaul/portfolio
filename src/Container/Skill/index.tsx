@@ -12,7 +12,7 @@ const Skill = () => {
             style={`text-[${Colors.LightGrey}] text-[19px]`}
           />
           <CustomText
-            text="skills"
+            text="Skills"
             style={`text-[${Colors.LightBlue}] text-[26px]`}
           />
         </div>

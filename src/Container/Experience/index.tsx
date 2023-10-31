@@ -11,12 +11,12 @@ const Experience = () => {
           style={`text-[${Colors.SkyBlue}] text-[19px]`}
         />
       </div>
-      <div className="h-[70%] w-full flex flex-col justify-center items-center">
+      <div className="h-[70%] w-full flex justify-around items-center">
         {experienceDetails.map((obj, index) => {
           return (
             <>
               <div
-                className={`flex w-[50%] h-full justify-evenly pt-4 bg-[${Colors.NavyBlue}] rounded-[25px] cursor-pointer
+                className={`flex w-[45%] h-full justify-evenly pt-4 bg-[${Colors.NavyBlue}] rounded-[25px] cursor-pointer
                 hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`}
                 key={index}
               >

@@ -16,22 +16,26 @@ const SkillCard = ({ cardBehaviour }: skillCardType) => {
         >
           <CustomText text={cardBehaviour.title} />
         </div>
-        <div className="flex w-[80%] h-[75%] flex-wrap justify-start items-start ">
-          {cardBehaviour.content.map((obj: skillCardDetails) => {
-            return (
-              <div className={`w-[50%] flex h-[50px] items-center text-white`}>
-                <CustomImage
-                  imageBehaviour={{
-                    src: obj.img,
-                    alt: "",
-                    height: 20,
-                    width: 20,
-                  }}
-                />
-                <CustomText text={obj.name} style="indent-3" />
-              </div>
-            );
-          })}
+        <div className="flex w-[80%] h-[75%] ">
+          <div className="w-full h-full flex flex-wrap justify-center">
+            {cardBehaviour.content.map((obj: skillCardDetails) => {
+              return (
+                <div
+                  className={`w-[50%] flex h-[50px] items-center text-white`}
+                >
+                  <CustomImage
+                    imageBehaviour={{
+                      src: obj.img,
+                      alt: "",
+                      height: 20,
+                      width: 20,
+                    }}
+                  />
+                  <CustomText text={obj.name} style="indent-3" />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

@@ -22,12 +22,12 @@ const DashBoard = () => {
       }}
     >
       <div
-        className="h-[60vh] w-[75%] flex justify-center items-center"
+        className="h-[50vh] w-[75%] flex justify-center items-center"
         id="Home"
       >
         <Header />
       </div>
-      <div className="h-[80vh] w-[75%]" id="About">
+      <div className="h-[70vh] w-[75%]" id="About">
         <About />
       </div>
       <div
@@ -37,7 +37,7 @@ const DashBoard = () => {
         <Skill />
       </div>
       <div
-        className="h-[70vh] w-[75%] flex justify-center items-center"
+        className="h-[60vh] w-[75%] flex justify-center items-center"
         id="Experience"
       >
         <Experience />
