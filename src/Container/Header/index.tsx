@@ -2,6 +2,7 @@ import React from "react";
 import { github, linkedIn, twitter } from "../../Assets";
 import { Files, Url, staticDetails } from "../../Utills";
 import { CustomButton, CustomImage, CustomText } from "../../Componets";
+import TypeWriter from "../../Componets/TypeWriter";
 
 const Header = () => {
   const Icons = [
@@ -63,10 +64,14 @@ const Header = () => {
               text="Hello I'm"
               style="text-white font-bold text-[13px]"
             />
-            <CustomText
+            <div className="h-[65px]">
+
+            <TypeWriter text="Jaffrin Sampaul" delay={300} style="text-[45px] text-white font-bold"/>
+            </div>
+            {/* <CustomText
               text="Jaffrin Sampaul"
               style="text-[45px] text-white font-bold"
-            />
+            /> */}
             <CustomText
               text="Full-stack Developer"
               style="text-[#4db5ff] text-[11px] font-extrabold"
