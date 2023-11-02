@@ -1,4 +1,20 @@
-import { abs, folder, ribbon, verified } from "../Assets";
+import {
+  Css,
+  Github,
+  Html,
+  Javascript,
+  Nest,
+  Next,
+  Postgresql,
+  React,
+  Redux,
+  Tailwind,
+  Typescript,
+  abs,
+  folder,
+  ribbon,
+  verified,
+} from "../Assets";
 
 export const aboutCard = [
   { img: ribbon, title: "Experience", subTitle: "1.6 year" },
@@ -53,7 +69,6 @@ export const skills = {
       img: verified,
       name: "Next JS",
     },
-   
   ],
   backEnd: [
     {
@@ -92,8 +107,20 @@ export const experienceDetails = [
       },
     ],
   },
-  
-  
 ];
 
 export const mailSubject = "Let's Connect";
+
+export const TECH_SKILL = [
+  Html,
+  Css,
+  Javascript,
+  Typescript,
+  React,
+  Redux,
+  Next,
+  Tailwind,
+  Nest,
+  Postgresql,
+  Github,
+];

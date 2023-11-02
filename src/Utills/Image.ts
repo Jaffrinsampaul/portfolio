@@ -25,11 +25,49 @@ import Profile from "../Assets/Images/png/profile.png";
 
 import ABS from "../Assets/Images/jpeg-jpg/abs.jpeg";
 
+// tech skill
+import Html from "../Assets/Icons/tech/html.png";
+import Css from "../Assets/Icons/tech/css.png";
+import React from "../Assets/Icons/tech/reactjs.png";
+import Redux from "../Assets/Icons/tech/redux.png";
+import Tailwind from "../Assets/Icons/tech/tailwind.png";
+import Nest from "../Assets/Icons/tech/nestjs.png";
+import Next from "../Assets/Icons/tech/nextJs.png";
+import Github from "../Assets/Icons/tech/git.png";
+import Postgresql from "../Assets/Icons/tech/postgressSql.png";
+import Javascript from "../Assets/Icons/tech/javascript.png";
+import Typescript from "../Assets/Icons/tech/typescript.png";
+
 export const Image = {
-  RightTriangle, RightTriangles,
-  LinkedIn, GitHub, Twitter, Crub,
-  Ribbon, Folder, Profile, Verification,
-  TwitterWhite, GithubWhite, LinkedInWhite,
-  Mail, MailWhite, ABS, User, Home, Category,
+  RightTriangle,
+  RightTriangles,
+  LinkedIn,
+  GitHub,
+  Twitter,
+  Crub,
+  Ribbon,
+  Folder,
+  Profile,
+  Verification,
+  TwitterWhite,
+  GithubWhite,
+  LinkedInWhite,
+  Mail,
+  MailWhite,
+  ABS,
+  User,
+  Home,
+  Category,
   Skill,
+  Html,
+  Css,
+  React,
+  Redux,
+  Tailwind,
+  Nest,
+  Next,
+  Github,
+  Postgresql,
+  Javascript,
+  Typescript,
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Colors, skills } from "../../Utills";
 import { CustomText, SkillCard } from "../../Componets";
+import { TECH_SKILL } from "../../Utills/MockData";
 
 const Skill = () => {
   return (
@@ -16,8 +17,8 @@ const Skill = () => {
             style={`text-[${Colors.LightBlue}] text-[26px]`}
           />
         </div>
-        <div className="flex justify-between h-[70%]">
-          <SkillCard
+        <div className="flex justify-center h-[60%] w-full">
+          {/* <SkillCard
             cardBehaviour={{
               content: skills.frontEnd,
               title: "Front-end Development",
@@ -38,7 +39,19 @@ const Skill = () => {
                 width: 20,
               },
             }}
-          />
+          /> */}
+          <div className="flex flex-wrap justify-between items-start w-[80%] gap-3">
+            {TECH_SKILL.map((role) => {
+              return (
+                <div
+                  className="w-[200px] h-[90px] flex justify-center 
+                items-center rounded-[25px] border-[2px] border-[#2c2c6c]"
+                >
+                  <img src={role} style={{ height: "49px" }} />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

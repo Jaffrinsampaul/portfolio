@@ -37,7 +37,7 @@ const DashBoard = () => {
         <Skill />
       </div>
       <div
-        className="h-[60vh] w-[75%] flex justify-center items-center"
+        className="h-[55vh] w-[75%] flex justify-center items-center"
         id="Experience"
       >
         <Experience />

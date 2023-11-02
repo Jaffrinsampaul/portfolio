@@ -20,6 +20,19 @@ import verified from "./Icons/png/verified.png";
 import abs from "./Images/jpeg-jpg/abs.jpeg";
 import profile from "./Images/png/profile.png";
 
+// tech skill
+import Html from "./Icons/tech/html.png";
+import Css from "./Icons/tech/css.png";
+import React from "./Icons/tech/reactjs.png";
+import Redux from "./Icons/tech/redux.png";
+import Tailwind from "./Icons/tech/tailwind.png";
+import Nest from "./Icons/tech/nestjs.png";
+import Next from "./Icons/tech/nextJs.png";
+import Github from "./Icons/tech/git.png";
+import Postgresql from "./Icons/tech/postgressSql.png";
+import Javascript from "./Icons/tech/javascript.png";
+import Typescript from "./Icons/tech/typescript.png";
+
 export {
   category,
   comments,
@@ -41,4 +54,15 @@ export {
   verified,
   abs,
   profile,
+  Html,
+  Css,
+  Javascript,
+  Typescript,
+  React,
+  Redux,
+  Tailwind,
+  Nest,
+  Next,
+  Github,
+  Postgresql,
 };
