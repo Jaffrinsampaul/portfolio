@@ -40,12 +40,12 @@ const Skill = () => {
               },
             }}
           /> */}
-          <div className="flex flex-wrap justify-between items-start w-[80%] gap-3">
+          <div className="flex flex-wrap justify-between items-start w-[80%] gap-3 ">
             {TECH_SKILL.map((role) => {
               return (
                 <div
                   className="w-[200px] h-[90px] flex justify-center 
-                items-center rounded-[25px] border-[2px] border-[#2c2c6c]"
+                items-center rounded-[25px]  hover:bg-[#2c2c6c] hover:border-[1px] hover:border-[#4db5ff] transition ease-in-out duration-300"
                 >
                   <img src={role} style={{ height: "49px" }} />
                 </div>
