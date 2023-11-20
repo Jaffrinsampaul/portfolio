@@ -9,7 +9,7 @@ const Footer = () => {
       <div
         className={`h-[90%] w-full bg-[${Colors.SkyBlue}] flex flex-col items-center`}
       >
-        <div className="w-[45%] h-full flex flex-col items-center ">
+        <div className="2xl:w-[45%] h-full flex flex-col items-center sm:w-[100%]  sm:min-w-full">
           <div className="h-[30%] w-full flex justify-center items-center">
             <CustomText
               text="Jaffrin Sampaul"

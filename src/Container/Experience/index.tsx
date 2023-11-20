@@ -16,7 +16,7 @@ const Experience = () => {
           return (
             <>
               <div
-                className={`flex w-[45%] h-full justify-evenly pt-4 bg-[${Colors.NavyBlue}] rounded-[25px] cursor-pointer
+                className={`flex 2xl:w-[55%] xl:w-[70%] lg:w-[80%] sm:w-full h-full justify-evenly pt-4 bg-[${Colors.NavyBlue}] rounded-[25px] cursor-pointer
                 hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`}
                 key={index}
               >
