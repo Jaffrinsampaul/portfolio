@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="h-[60%] lg:h-[60%] md:h-[90%] w-full flex justify-center">
+      <div className="h-[70%] lg:h-[80%] md:h-[90%] w-full flex justify-center">
         <div className="flex flex-col w-[20%] justify-evenly items-center h-full">
           {Icons.map((obj: { img: any; name: string }) => {
             return (
@@ -64,7 +64,7 @@ const Header = () => {
               text="Hello I'm"
               style="text-white font-bold text-[13px]"
             />
-            <div className="h-[65px]">
+            <div className="h-[12px] md:h-[45px] lg:h-[65px]">
               <TypeWriter
                 text="Jaffrin Sampaul"
                 delay={300}

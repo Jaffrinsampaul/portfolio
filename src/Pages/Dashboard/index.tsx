@@ -27,19 +27,19 @@ const DashBoard = () => {
       >
         <Header />
       </div>
-      <div className="h-[70vh] sm:w-[100%] md:w-[90%] lg:w-[60%] w-[90%]" id="About">
+      <div className="h-[45vh] sm:h-[50vh] md:h-[55vh] lg:h-[70vh] sm:w-[100%] md:w-[90%] lg:w-[60%] w-[90%]" id="About">
         <About />
       </div>
       <div className=" w-[75%] flex justify-center items-center" id="Skill">
         <Skill />
       </div>
       <div
-        className="h-[55vh] w-[75%] flex justify-center items-center"
+        className="h-[55vh] sm:w-[100%] md:w-[90%] lg:w-[60%] w-[90%] flex justify-center items-center"
         id="Experience"
       >
         <Experience />
       </div>
-      <div className="h-[70vh] w-full flex justify-end items-end" id="Footer">
+      <div className="h-[70vh] md:h-[55vh] lg:h-[70vh]  w-full flex justify-end items-end" id="Footer">
         <Footer />
       </div>
       <Navbar />

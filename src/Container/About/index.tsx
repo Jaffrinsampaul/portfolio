@@ -7,20 +7,20 @@ import { Colors, aboutCard, about } from "../../Utills";
 const About = () => {
   return (
     <>
-      <div className="h-[100%] w-full flex flex-col justify-between">
+      <div className="h-[100%] w-full flex flex-col justify-around">
         <div className="w-full h-[15%]  flex flex-col justify-center items-center">
           <CustomText
             text="Get to know"
-            style={`text-[${Colors.LightGrey}] text-[15px] font-bold`}
+            style={`text-[${Colors.LightGrey}]  text-[10px] lg:text-[15px] sm:text-[12px] md:text-[13px] font-bold`}
           />
           <CustomText
             text="About Me"
-            style={`text-[${Colors.LightBlue}] text-[25px] font-bold`}
+            style={`text-[${Colors.LightBlue}] text-[18px] font-bold pt-[20px]`}
           />
         </div>
-        <div className="flex w-full h-[78%] justify-between items-start">
-          <div className="flex w-[38%] h-full justify-center">
-            <div className=" h-[80%] profile w-[95%] rounded-[30px] rotate-[-1deg]">
+        <div className="flex w-full h-[68%] justify-between items-start">
+          <div className="flex w-[38%] h-[80%] justify-center items-center md:h-[80%]">
+            <div className=" h-[80%]  lg:h-[90%] profile w-[95%] rounded-[30px] rotate-[-1deg]">
               <div
                 style={{
                   background: `url(${profile})`,
@@ -51,7 +51,8 @@ const About = () => {
                 );
               })}
             </div>
-            <div className="h-[50%] text-justify text-[#9F9FA9] text-[7px] sm:text-[11px] md:text-[15px] lg:text-[17px] font-semibold leading-7">
+            <div className="h-[50%] text-justify text-[#9F9FA9] text-[7px] sm:text-[11px] 
+            md:text-[15px] lg:text-[17px] font-semibold leading-5 lg:leading-7 md:leading-6">
               <CustomText text={about} />
             </div>
           </div>

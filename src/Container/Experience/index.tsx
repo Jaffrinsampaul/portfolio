@@ -8,7 +8,7 @@ const Experience = () => {
       <div className="h-[20%] w-full flex justify-center items-center">
         <CustomText
           text="Experience"
-          style={`text-[${Colors.SkyBlue}] text-[19px]`}
+          style={`text-[${Colors.SkyBlue}] text-[19px] `}
         />
       </div>
       <div className="h-[70%] w-full flex justify-around items-center">
@@ -37,12 +37,12 @@ const Experience = () => {
                     <a href={obj.companyWebsite} target="_blank">
                       <CustomText
                         text={obj.companyName}
-                        style={`text-[${Colors.SkyBlue}] text-[19px] hover:text-white text-[25px]`}
+                        style={`text-[${Colors.SkyBlue}] hover:text-white text-[10px] sm:text-[13px] md:text-[15px] lg:text-[19px]`}
                       />
                     </a>
                     <CustomText
                       text={obj.companyLocation}
-                      style={`text-[${Colors.LightGrey}] text-[19px] hover:text-white text-[13px]`}
+                      style={`text-[${Colors.LightGrey}] hover:text-white text-[10px] sm:text-[13px] md:text-[15px] lg:text-[19px]`}
                     />
                   </div>
                   <div className="h-[60%] w-full flex flex-col justify-evenly">
@@ -53,17 +53,17 @@ const Experience = () => {
                             <div>
                               <CustomText
                                 text={roles.role}
-                                style={`text-[${Colors.SkyBlue}] text-[19px] hover:text-white`}
+                                style={`text-[${Colors.SkyBlue}] hover:text-white text-[10px] sm:text-[13px] md:text-[15px] lg:text-[19px]`}
                               />
                               <CustomText
                                 text={roles.period}
-                                style={`text-[${Colors.LightGrey}] text-[19px] hover:text-white text-[12px]`}
+                                style={`text-[${Colors.LightGrey}] hover:text-white text-[10px] sm:text-[13px] md:text-[15px] lg:text-[19px]`}
                               />
                             </div>
                             {obj.roles.length - 1 !== index && (
                               <div className="w-[68%] justify-center items-center flex pt-5">
                                 <div
-                                  className={`bg-white w-[2px] h-[25px] rounded bg-opacity-60 `}
+                                  className={`bg-white w-[2px] h-[15px]  sm:h-[18px] md:h-[20px] lg:h-[25px] rounded bg-opacity-60 `}
                                 ></div>
                               </div>
                             )}
