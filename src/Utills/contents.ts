@@ -122,3 +122,10 @@ export const TECH_SKILL = [
   Postgresql,
   Github,
 ];
+
+
+export const HEADER_DETAILS = {
+  WELCOME_MESSAGE: "Hello I'm",
+  ROLES :"Junior Software Developer",
+  NAMES:"Jaffrin Sampaul"
+}

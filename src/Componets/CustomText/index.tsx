@@ -1,11 +1,8 @@
 import React from "react";
+import { textType } from "../../Utills/dto";
 
-type Props={
-    text: string,
-    style ?:string
-}
 
-const CustomText =({text, style}:Props)=>{
+const CustomText =({text, style}:textType)=>{
     return(
         <>
         <p className={style}>{text}</p>

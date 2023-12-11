@@ -1,15 +1,9 @@
 import React from "react";
-import { aboutCardType } from "../../Utills/dto";
+import { aboutCardType, cardType } from "../../Utills/dto";
 import { CustomImage, CustomText } from "../../Componets";
-type Props = {
-  cardBehaviour: {
-    detail: aboutCardType;
-    style: string;
-    detailStyle: string;
-  };
-};
 
-const AboutCard = ({ cardBehaviour }: Props) => {
+
+const AboutCard = ({ cardBehaviour }: cardType) => {
   return (
     <>
       <div className={cardBehaviour.style}>

@@ -1,15 +1,9 @@
 import React from "react";
+import { imageType } from "../../Utills/dto";
 
-type Props = {
-  imageBehaviour: {
-    src: any;
-    height: string | number;
-    width: string | number;
-    alt: string;
-  };
-};
 
-const CustomImage = ({ imageBehaviour }: Props) => {
+
+const CustomImage = ({ imageBehaviour }: imageType) => {
   return (
     <>
       <img

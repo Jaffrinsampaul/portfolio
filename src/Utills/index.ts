@@ -6,7 +6,7 @@ import {
   experienceDetails,
   mailSubject,
   about,
-} from "./MockData";
+} from "./contents";
 import { staticDetails } from "./Staticdetails";
 import navigateToDiv from "./navigate";
 import { Url } from "./socialMediaUrl";

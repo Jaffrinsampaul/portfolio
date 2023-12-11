@@ -1,15 +1,7 @@
 import React from "react";
+import { animatedType } from "../../Utills/dto";
 
-
-type Props ={
-    AnimatedBehaviour:{
-        repeat: string,
-        style: string,
-        sequence: any
-    }
-}
-
-const AnimatedText =({AnimatedBehaviour}:Props)=>{
+const AnimatedText =({AnimatedBehaviour}:animatedType)=>{
     return(
         <>
         

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { typeWritter } from "../../Utills/dto";
 
-const TypeWriter = ({ text, delay, style }: any) => {
+const TypeWriter = ({ text, delay, style }: typeWritter) => {
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 

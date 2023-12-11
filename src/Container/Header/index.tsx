@@ -3,23 +3,24 @@ import { github, linkedIn, twitter } from "../../Assets";
 import { Files, Url, staticDetails } from "../../Utills";
 import { CustomButton, CustomImage, CustomText } from "../../Componets";
 import TypeWriter from "../../Componets/TypeWriter";
+import { HEADER_DETAILS } from "../../Utills/contents";
 
 const Header = () => {
-  const Icons = [
+  const ICONS = [
     { img: linkedIn, name: Url.linkedIn },
     { img: github, name: Url.gitHub },
     { img: twitter, name: Url.twitter },
   ];
 
-  function scrollTo() {
+  const scrollTo = () => {
     const tagOffset: any = document.getElementById("Footer")?.offsetTop;
     window.scrollTo({
       top: tagOffset - 100,
       behavior: "smooth",
     });
-  }
+  };
 
-  function downloadCV() {
+  const downloadCV = () => {
     fetch(Files.ReactAction).then((res) => {
       res.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
@@ -30,7 +31,7 @@ const Header = () => {
         alink.click();
       });
     });
-  }
+  };
 
   function letTalk() {}
 
@@ -38,7 +39,7 @@ const Header = () => {
     <>
       <div className="h-[70%] lg:h-[80%] md:h-[90%] w-full flex justify-center">
         <div className="flex flex-col w-[20%] justify-evenly items-center h-full">
-          {Icons.map((obj: { img: any; name: string }) => {
+          {ICONS.map((obj: { img: any; name: string }) => {
             return (
               <>
                 <div>
@@ -61,23 +62,19 @@ const Header = () => {
         <div className="w-[60%] flex flex-col justify-evenly items-center">
           <div className="h-[50%] flex flex-col justify-evenly items-center font-extrabold">
             <CustomText
-              text="Hello I'm"
+              text={HEADER_DETAILS.WELCOME_MESSAGE}
               style="text-white font-bold text-[13px]"
             />
             <div className="h-[12px] md:h-[45px] lg:h-[65px]">
               <TypeWriter
-                text="Jaffrin Sampaul"
+                text={HEADER_DETAILS.NAMES}
                 delay={300}
                 style="text-[10px] sm:text-[15px] md:text-[30px] lg:text-[45px] text-white font-bold"
               />
             </div>
-            {/* <CustomText
-              text="Jaffrin Sampaul"
-              style="text-[45px] text-white font-bold"
-            /> */}
             <CustomText
-              text="Full-stack Developer"
-              style="text-[#4db5ff] text-[11px] font-extrabold"
+              text={HEADER_DETAILS.ROLES}
+              style="text-[#4db5ff] text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px]  font-extrabold"
             />
           </div>
           <div className="flex sm:w-[80%] md:w-[70%] lg:w-[65%] w-[100%] justify-around h-[30%] items-center">

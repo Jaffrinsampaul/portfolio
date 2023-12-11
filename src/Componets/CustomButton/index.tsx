@@ -1,26 +1,13 @@
 import React from "react";
 import { CustomImage, CustomText } from "../../Componets";
+import { buttonType } from "../../Utills/dto";
 
-type Props = {
-  buttonBehaviour: {
-    btnName: string;
-    textStyle?: string;
-    onClick: Function;
-    style: string;
-    image?: {
-      src: any;
-      height: string | number;
-      width: string | number;
-      alt: string;
-    };
-  };
-};
 
-const CustomButton = ({ buttonBehaviour }: Props) => {
-  console.log(buttonBehaviour);
+
+const CustomButton = ({ buttonBehaviour }: buttonType) => {
   return (
     <>
-      <div
+      <button
         className={`${buttonBehaviour.style} cursor-pointer`}
         onClick={(event) => buttonBehaviour.onClick()}
       >
@@ -31,7 +18,7 @@ const CustomButton = ({ buttonBehaviour }: Props) => {
           text={buttonBehaviour.btnName}
           style={buttonBehaviour.textStyle}
         />
-      </div>
+      </button>
     </>
   );
 };
