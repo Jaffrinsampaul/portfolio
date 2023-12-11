@@ -22,18 +22,15 @@ const DashBoard = () => {
       }}
     >
       <div
-        className="h-[50vh] w-[75%] flex justify-center items-center"
+        className="md:h-[30vh] lg:h-[50vh] h-[50vh] sm:w-[100%] md:w-[100%] lg:w-[60%] w-[100%] flex justify-center items-center"
         id="Home"
       >
         <Header />
       </div>
-      <div className="h-[70vh] w-[75%]" id="About">
+      <div className="h-[70vh] sm:w-[100%] md:w-[90%] lg:w-[60%] w-[90%]" id="About">
         <About />
       </div>
-      <div
-        className="h-[60vh] w-[75%] flex justify-center items-center"
-        id="Skill"
-      >
+      <div className=" w-[75%] flex justify-center items-center" id="Skill">
         <Skill />
       </div>
       <div

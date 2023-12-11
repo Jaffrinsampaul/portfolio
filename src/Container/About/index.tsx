@@ -39,17 +39,19 @@ const About = () => {
                     <AboutCard
                       cardBehaviour={{
                         detail: obj,
-                        detailStyle: "text-[#767685] font-semibold text-[13px]",
+                        detailStyle: "text-[#767685] font-semibold  text-[5px] sm:text-[8px] md:text-[10px] lg:text-[13px]",
                         style: `w-[45%] h-[100%] flex flex-col 
                           justify-evenly items-center rounded-[15px] 
-                          bg-[#2c2c6c] text-white font-semibold text-[16px] hover:bg-transparent transition ease-in-out delay-150 duration-300 border border-transparent hover:border-[#4db5ff]`,
+                          bg-[#2c2c6c] text-white font-semibold text-[8px] sm:text-[10px] md:text-[13px] lg:text-[16px] 
+                          hover:bg-transparent transition ease-in-out delay-150 duration-300 
+                          border border-transparent hover:border-[#4db5ff]`,
                       }}
                     />
                   </>
                 );
               })}
             </div>
-            <div className="h-[50%] text-justify text-[#9F9FA9] text-[17px] font-semibold leading-7">
+            <div className="h-[50%] text-justify text-[#9F9FA9] text-[7px] sm:text-[11px] md:text-[15px] lg:text-[17px] font-semibold leading-7">
               <CustomText text={about} />
             </div>
           </div>

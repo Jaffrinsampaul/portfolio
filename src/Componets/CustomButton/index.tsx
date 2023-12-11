@@ -21,7 +21,7 @@ const CustomButton = ({ buttonBehaviour }: Props) => {
   return (
     <>
       <div
-        className={buttonBehaviour.style}
+        className={`${buttonBehaviour.style} cursor-pointer`}
         onClick={(event) => buttonBehaviour.onClick()}
       >
         {buttonBehaviour.image && (

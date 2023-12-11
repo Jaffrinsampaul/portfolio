@@ -16,7 +16,7 @@ const Navbar = () => {
         {button.map((obj) => {
           return (
               <div onClick={()=>navigateToDiv(obj.navigateTo)}
-              className="hover:bg-black hover:bg-opacity-80 rounded-full h-[40px] w-[40px] flex justify-center items-center transition ease-in-out delay-150 duration-300">
+              className="hover:bg-black hover:bg-opacity-80 rounded-full h-[40px] w-[40px] flex justify-center items-center cursor-pointer transition ease-in-out delay-150 duration-300">
                 <CustomImage
                   imageBehaviour={{
                     src: obj.icons,

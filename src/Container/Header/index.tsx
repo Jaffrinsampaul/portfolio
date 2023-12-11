@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="h-[60%] w-full flex justify-center">
+      <div className="h-[60%] lg:h-[60%] md:h-[90%] w-full flex justify-center">
         <div className="flex flex-col w-[20%] justify-evenly items-center h-full">
           {Icons.map((obj: { img: any; name: string }) => {
             return (
@@ -65,8 +65,11 @@ const Header = () => {
               style="text-white font-bold text-[13px]"
             />
             <div className="h-[65px]">
-
-            <TypeWriter text="Jaffrin Sampaul" delay={300} style="text-[45px] text-white font-bold"/>
+              <TypeWriter
+                text="Jaffrin Sampaul"
+                delay={300}
+                style="text-[10px] sm:text-[15px] md:text-[30px] lg:text-[45px] text-white font-bold"
+              />
             </div>
             {/* <CustomText
               text="Jaffrin Sampaul"
@@ -77,13 +80,13 @@ const Header = () => {
               style="text-[#4db5ff] text-[11px] font-extrabold"
             />
           </div>
-          <div className="flex w-[60%] justify-around h-[30%] items-center">
+          <div className="flex sm:w-[80%] md:w-[70%] lg:w-[65%] w-[100%] justify-around h-[30%] items-center">
             <CustomButton
               buttonBehaviour={{
                 btnName: "Download CV",
                 style:
-                  "w-[140px] h-[55px] flex items-center justify-center hover:bg-white  text-[#4db5ff] transition duration-s hover:duration-150 hover:text-black border border-[#4db5ff] rounded-[10px] ",
-                textStyle: "text-[15px]  font-bold ",
+                  "w-[100px] sm:w-[110px] md:w-[120px] lg:w-[140px] h-[45px] sm:h-[50px] md:h-[50px] lg:h-[55px] flex items-center justify-center hover:bg-white  text-[#4db5ff] transition duration-s hover:duration-150 hover:text-black border border-[#4db5ff] rounded-[10px] ",
+                textStyle: "text-[10px] lg:text-[15px]  font-bold ",
                 onClick: downloadCV,
               }}
             />
@@ -92,8 +95,8 @@ const Header = () => {
                 btnName: "Let's talk",
                 onClick: letTalk,
                 style:
-                  "w-[100px] h-[55px] flex items-center justify-center bg-[#4db5ff] rounded-[10px] hover:bg-white hover:text-black transition duration-s hover:duration-150",
-                textStyle: "text-[15px] font-bold",
+                  "sm:w-[80px] md:w-[100px] lg:w-[110px] w-[70px] h-[45px] sm:h-[50px] md:h-[50px] lg:h-[55px] flex items-center justify-center bg-[#4db5ff] rounded-[10px] hover:bg-white hover:text-black transition duration-s hover:duration-150",
+                textStyle: "text-[10px] lg:text-[15px] font-bold",
               }}
             />
           </div>
@@ -102,7 +105,7 @@ const Header = () => {
           <div onClick={scrollTo}>
             <CustomText
               text="Scroll Down"
-              style="text-[#4db5ff] rotate-90 cursor-pointer text-[14.4px]"
+              style="text-[#4db5ff] rotate-90 cursor-pointer text-[11.4px] sm:text-[12.4px] md:text-[13.4px] lg:text-[14.4px]"
             />
           </div>
         </div>

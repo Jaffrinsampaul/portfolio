@@ -22,10 +22,8 @@ export const aboutCard = [
 ];
 
 export const about = `Hi I'm JAFFRIN I happy to see you in my account. 
-I'm working as full stack developer in Alpha business solution. I'm working 
-in pledge mobile application we use react native for front end in back end we 
-use node Js. I worked in 72 business tool now it's live. Worked in Kiwi it's a 
-chat bot application. And I'm looking for new job`;
+I'm working as Junior Software developer in Alpha business solution. I'm worked 
+in both mobile application, web application and backend.`;
 
 export const skills = {
   frontEnd: [
