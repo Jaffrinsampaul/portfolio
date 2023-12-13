@@ -26,3 +26,18 @@ p{
   background-image: linear-gradient(250deg, transparent, #4CB3FC);
   /* background: linear-gradient(42deg, transparent,var(red),transparent); */
 }
+
+
+.tooltip .tooltipcontent{
+  visibility: hidden;
+  background-color: #4CB3FC;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px 0px;
+  position: absolute;
+  z-index: 1; 
+}
+.tooltip:hover .tooltipcontent{
+  visibility: visible;
+}

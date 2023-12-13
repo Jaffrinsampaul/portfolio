@@ -29,6 +29,7 @@ export type imageType = {
     height: string | number;
     width: string | number;
     alt: string;
+    className?: string
   };
 };
 

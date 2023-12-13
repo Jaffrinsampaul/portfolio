@@ -11,6 +11,7 @@ const CustomImage = ({ imageBehaviour }: imageType) => {
         alt={imageBehaviour.alt}
         height={imageBehaviour.height}
         width={imageBehaviour.width}
+        className={imageBehaviour.className}
       />
     </>
   );

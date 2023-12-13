@@ -11,7 +11,7 @@ const Experience = () => {
           style={`text-[${Colors.SkyBlue}] text-[19px] `}
         />
       </div>
-      <div className="h-[70%] w-full flex justify-around items-center">
+      <div className="h-[70%] lg:h-[80%] w-full flex justify-around items-center">
         {experienceDetails.map((obj, index) => {
           return (
             <>

@@ -126,7 +126,7 @@ const Footer = () => {
           >
             <CustomText
               text="©Jaffrin 2023.All rights reserved."
-              style="text-sm"
+              style=" text-[12px] sm:text-[14px] lg:text-[17px]"
             />
           </div>
         </div>

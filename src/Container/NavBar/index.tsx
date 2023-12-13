@@ -12,20 +12,28 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="flex fixed bottom-[30px] h-[65px] w-[350px] backdrop-filter backdrop-blur-sm bg-black bg-opacity-25 justify-evenly items-center rounded-[40px]">
+      <div
+        className="flex fixed bottom-[30px] h-[65px] w-[350px] backdrop-filter 
+      backdrop-blur-sm bg-black bg-opacity-25 justify-evenly items-center rounded-[40px]"
+      >
         {BUTTON.map((obj) => {
           return (
-              <div onClick={()=>navigateToDiv(obj.navigateTo)}
-              className="hover:bg-black hover:bg-opacity-80 rounded-full h-[40px] w-[40px] flex justify-center items-center cursor-pointer transition ease-in-out delay-150 duration-300">
-                <CustomImage
-                  imageBehaviour={{
-                    src: obj.icons,
-                    alt: "BUTTON",
-                    height: 20,
-                    width: 20,
-                  }}
-                />
-              </div>
+            <div
+              onClick={() => navigateToDiv(obj.navigateTo)}
+              className="hover:bg-black hover:bg-opacity-80 rounded-full 
+              h-[40px] w-[40px] flex justify-center items-center cursor-pointer transition 
+              ease-in-out delay-150 duration-300 tooltip"
+              // title={`${obj.navigateTo}`}
+            >
+              <CustomImage
+                imageBehaviour={{
+                  src: obj.icons,
+                  alt: "BUTTON",
+                  height: 20,
+                  width: 20,
+                }}
+              />
+            </div>
           );
         })}
       </div>
