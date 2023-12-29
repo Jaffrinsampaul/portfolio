@@ -16,14 +16,14 @@ import {
   verified,
 } from "../Assets";
 
-export const aboutCard = [
+export const ABOUT_CARD = [
   { img: ribbon, title: "Experience", subTitle: "1.6 year" },
-  { img: folder, title: "Projects", subTitle: "4 Completed Projects" },
+  { img: folder, title: "Projects", subTitle: "Completed 4 Projects" },
 ];
 
-export const about = `Hi I'm JAFFRIN I happy to see you in my account. 
-I'm working as Junior Software developer in Alpha business solution. I'm worked 
-in both mobile application, web application and backend.`;
+export const about = `Hello, I'm JAFFRIN, delighted to have you in my space! I'm a Junior Software Developer at Alpha Business Solutions, with expertise 
+in crafting mobile applications, web development,
+ and backend solutions. If you have any queries or need assistance, don't hesitate to reach out—I'm here to help!`;
 
 export const skills = {
   frontEnd: [
@@ -123,9 +123,8 @@ export const TECH_SKILL = [
   Github,
 ];
 
-
 export const HEADER_DETAILS = {
   WELCOME_MESSAGE: "Hello I'm",
-  ROLES :"Junior Software Developer",
-  NAMES:"Jaffrin Sampaul"
-}
+  ROLES: "Junior Software Developer",
+  NAMES: "Jaffrin Sampaul",
+};

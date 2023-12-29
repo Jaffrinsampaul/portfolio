@@ -2,7 +2,7 @@ import React from "react";
 import { aboutCardType } from "../../Utills/dto";
 import { profile } from "../../Assets";
 import { AboutCard, CustomText } from "../../Componets";
-import { Colors, aboutCard, about } from "../../Utills";
+import { ABOUT_CARD, Colors, about } from "../../Utills";
 
 const About = () => {
   return (
@@ -32,15 +32,16 @@ const About = () => {
             </div>
           </div>
           <div className="w-[50%] h-full flex flex-col justify-between">
-            <div className="flex justify-between h-[35%] items-center">
-              {aboutCard.map((obj: aboutCardType) => {
+            <div className="flex justify-between sm:h-[45%] h-[40%] items-center ">
+              {ABOUT_CARD.map((obj: aboutCardType) => {
                 return (
                   <>
                     <AboutCard
                       cardBehaviour={{
                         detail: obj,
-                        detailStyle: "text-[#767685] font-semibold  text-[5px] sm:text-[8px] md:text-[10px] lg:text-[13px]",
-                        style: `w-[45%] h-[100%] flex flex-col 
+                        detailStyle:
+                          "text-[#767685] font-semibold  text-[5px] sm:text-[8px] md:text-[10px] lg:text-[13px] ",
+                        style: ` w-[45%] h-[100%] flex flex-col 
                           justify-evenly items-center rounded-[15px] 
                           bg-[#2c2c6c] text-white font-semibold text-[8px] sm:text-[10px] md:text-[13px] lg:text-[16px] 
                           hover:bg-transparent transition ease-in-out delay-150 duration-300 
@@ -51,9 +52,14 @@ const About = () => {
                 );
               })}
             </div>
-            <div className="h-[50%] text-justify text-[#9F9FA9] text-[7px] sm:text-[11px] 
-            md:text-[15px] lg:text-[17px] font-semibold leading-5 lg:leading-7 md:leading-6">
-              <CustomText text={about} />
+            <div
+              className="h-[60%] flex justify-center items-center text-[#9F9FA9] text-[7px] sm:text-[11px] 
+            md:text-[15px] lg:text-[17px] font-semibold leading-4 lg:leading-7 md:leading-6 "
+            >
+              <CustomText
+                text={about}
+                style="indent-[10px] text-[5px] sm:text-[8px] md:text-[10px] lg:text-[15px] xl:text-[18px]  2xl:text-[18px] xl:leading-10"
+              />
             </div>
           </div>
         </div>

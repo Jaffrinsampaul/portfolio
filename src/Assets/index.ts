@@ -16,6 +16,9 @@ import twitterWhite from "./Icons/png/twitterWhite.png";
 import twitter from "./Icons/png/twitter.png";
 import user from "./Icons/png/user.png";
 import verified from "./Icons/png/verified.png";
+import cv from "./Icons/png/cv.png";
+import mail from "./Icons/png/business.png";
+import downloadCv from "./Icons/png/cvDownload.png";
 
 import abs from "./Images/jpeg-jpg/abs.jpeg";
 import profile from "./Images/png/profile.png";
@@ -65,4 +68,7 @@ export {
   Next,
   Github,
   Postgresql,
+  cv,
+  mail,
+  downloadCv,
 };

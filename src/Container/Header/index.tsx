@@ -1,9 +1,10 @@
-import React from "react";
-import { github, linkedIn, twitter } from "../../Assets";
+import React, { Fragment } from "react";
+import { github, linkedIn, twitter, cv, mail, downloadCv } from "../../Assets";
 import { Files, Url, staticDetails } from "../../Utills";
 import { CustomButton, CustomImage, CustomText } from "../../Componets";
 import TypeWriter from "../../Componets/TypeWriter";
 import { HEADER_DETAILS } from "../../Utills/contents";
+import CustomIconButton from "../../Componets/CustomIconButton";
 
 const Header = () => {
   const ICONS = [
@@ -20,7 +21,7 @@ const Header = () => {
     });
   };
 
-  const downloadCV = () => {
+  const downloadResume = () => {
     fetch(Files.ReactAction).then((res) => {
       res.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
@@ -33,7 +34,10 @@ const Header = () => {
     });
   };
 
-  function letTalk() {}
+  const letTalk = () => {
+    window.open("mailto:jaffrin5404sam@gmail.com")
+    // parent.location = "mailto:jaffrin5404sam@gmail.com"
+  };
 
   return (
     <>
@@ -77,28 +81,59 @@ const Header = () => {
               style="text-[#4db5ff] text-[8px] sm:text-[9px] md:text-[10px] lg:text-[11px]  font-extrabold"
             />
           </div>
-          <div className="flex sm:w-[80%] md:w-[70%] lg:w-[65%] w-[100%] justify-around h-[30%] items-center">
-            <CustomButton
-              buttonBehaviour={{
-                btnName: "Download CV",
-                style:
-                  "w-[100px] sm:w-[110px] md:w-[120px] lg:w-[140px] h-[45px] sm:h-[50px] md:h-[50px] lg:h-[55px] flex items-center justify-center hover:bg-white  text-[#4db5ff] transition duration-s hover:duration-150 hover:text-black border border-[#4db5ff] rounded-[10px] ",
-                textStyle: "text-[10px] lg:text-[15px]  font-bold ",
-                onClick: downloadCV,
-              }}
-            />
-            <CustomButton
-              buttonBehaviour={{
-                btnName: "Let's talk",
-                onClick: letTalk,
-                style:
-                  "sm:w-[80px] md:w-[100px] lg:w-[110px] w-[70px] h-[45px] sm:h-[50px] md:h-[50px] lg:h-[55px] flex items-center justify-center bg-[#4db5ff] rounded-[10px] hover:bg-white hover:text-black transition duration-s hover:duration-150",
-                textStyle: "text-[10px] lg:text-[15px] font-bold",
-              }}
-            />
+          <div className="flex sm:w-[80%] md:w-[70%] lg:w-[100%] xl:w-full 2xl:w-full w-[100%] justify-around h-[30%] items-center">
+            <div className=" sm:hidden inline">
+              <CustomIconButton
+                iconDts={{
+                  src: downloadCv,
+                  alt: "cv",
+                  className: "h-[25px] w-[25px]",
+                }}
+                onClick={downloadResume}
+              />
+            </div>
+            <div className="sm:inline hidden">
+              <CustomButton
+                buttonBehaviour={{
+                  btnName: "Download CV",
+                  style:
+                    "w-[100px] sm:w-[110px] md:w-[120px] lg:w-[140px] h-[45px] sm:h-[50px] md:h-[50px] lg:h-[55px] flex items-center justify-center hover:bg-white  text-[#4db5ff] transition duration-s hover:duration-150 hover:text-black border border-[#4db5ff] rounded-[10px] ",
+                  textStyle: "text-[10px] lg:text-[15px]  font-bold",
+                  onClick: downloadResume,
+                }}
+              />
+            </div>
+            <div className="sm:inline hidden">
+              <CustomButton
+                buttonBehaviour={{
+                  btnName: "Let's talk",
+                  onClick: letTalk,
+                  style:
+                    "sm:w-[80px] md:w-[100px] lg:w-[110px] w-[70px] h-[45px] sm:h-[50px] md:h-[50px] lg:h-[55px] flex items-center justify-center bg-[#4db5ff] rounded-[10px] hover:bg-white hover:text-black transition duration-s hover:duration-150",
+                  textStyle: "text-[10px] lg:text-[15px] font-bold",
+                }}
+              />
+            </div>
+            <div className=" sm:hidden inline">
+              <CustomIconButton
+                iconDts={{
+                  src: mail,
+                  alt: "mail",
+                  className: "h-[25px] w-[25px]",
+                }}
+                onClick={letTalk}
+              />
+              {/* <CustomImage
+                imageBehaviour={{
+                  src: mail,
+                  alt: "mail",
+                  className: "h-[25px] w-[25px]",
+                }}
+              /> */}
+            </div>
           </div>
         </div>
-        <div className="flex w-[18%] justify-evenly items-center h-full ">
+        <div className="flex w-[19%] justify-evenly items-center h-full ">
           <div onClick={scrollTo}>
             <CustomText
               text="Scroll Down"

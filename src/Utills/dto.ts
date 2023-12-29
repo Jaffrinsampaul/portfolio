@@ -26,8 +26,8 @@ export type skillCardType = {
 export type imageType = {
   imageBehaviour: {
     src: any;
-    height: string | number;
-    width: string | number;
+    height?: string | number;
+    width?: string | number;
     alt: string;
     className?: string
   };

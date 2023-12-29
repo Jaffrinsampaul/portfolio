@@ -2,7 +2,7 @@ import { Colors } from "./Colors";
 import { Files } from "./Files";
 import {
   skills,
-  aboutCard,
+  ABOUT_CARD,
   experienceDetails,
   mailSubject,
   about,
@@ -16,7 +16,7 @@ export {
   Files,
   Colors,
   Url,
-  aboutCard,
+  ABOUT_CARD,
   skills,
   experienceDetails,
   mailSubject,
