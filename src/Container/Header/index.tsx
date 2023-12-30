@@ -3,8 +3,9 @@ import { github, linkedIn, twitter, cv, mail, downloadCv } from "../../Assets";
 import { Files, Url, staticDetails } from "../../Utills";
 import { CustomButton, CustomImage, CustomText } from "../../Componets";
 import TypeWriter from "../../Componets/TypeWriter";
-import { HEADER_DETAILS } from "../../Utills/contents";
+import { HEADER_DETAILS, mailSubject } from "../../Utills/contents";
 import CustomIconButton from "../../Componets/CustomIconButton";
+import reDirect from "../../Utills/reDirect";
 
 const Header = () => {
   const ICONS = [
@@ -35,7 +36,7 @@ const Header = () => {
   };
 
   const letTalk = () => {
-    window.open("mailto:jaffrin5404sam@gmail.com")
+    window.open("mailto:jaffrin5404sam@gmail.com");
     // parent.location = "mailto:jaffrin5404sam@gmail.com"
   };
 
@@ -107,7 +108,8 @@ const Header = () => {
               <CustomButton
                 buttonBehaviour={{
                   btnName: "Let's talk",
-                  onClick: letTalk,
+                  onClick: () =>
+                    reDirect(`mailto:${Url.mailTo}?subject=${mailSubject}`),
                   style:
                     "sm:w-[80px] md:w-[100px] lg:w-[110px] w-[70px] h-[45px] sm:h-[50px] md:h-[50px] lg:h-[55px] flex items-center justify-center bg-[#4db5ff] rounded-[10px] hover:bg-white hover:text-black transition duration-s hover:duration-150",
                   textStyle: "text-[10px] lg:text-[15px] font-bold",
@@ -121,7 +123,9 @@ const Header = () => {
                   alt: "mail",
                   className: "h-[25px] w-[25px]",
                 }}
-                onClick={letTalk}
+                onClick={() =>
+                  reDirect(`mailto:${Url.mailTo}?subject=${mailSubject}`)
+                }
               />
               {/* <CustomImage
                 imageBehaviour={{
