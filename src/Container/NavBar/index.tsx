@@ -23,6 +23,7 @@ const Navbar = () => {
               className="hover:bg-black hover:bg-opacity-80 rounded-full 
               h-[40px] w-[40px] flex justify-center items-center cursor-pointer transition 
               ease-in-out delay-150 duration-300 tooltip"
+              role="button"
               // title={`${obj.navigateTo}`}
             >
               <CustomImage

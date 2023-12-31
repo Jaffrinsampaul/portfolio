@@ -1,6 +1,6 @@
 import React from "react";
 import { aboutCardType } from "../../Utills/dto";
-import { profile } from "../../Assets";
+import { profile, profile1 } from "../../Assets";
 import { AboutCard, CustomText } from "../../Componets";
 import { ABOUT_CARD, Colors, about } from "../../Utills";
 
@@ -19,15 +19,16 @@ const About = () => {
           />
         </div>
         <div className="flex w-full h-[68%] justify-between items-start">
-          <div className="flex w-[38%] h-[80%] justify-center items-center md:h-[80%]">
+          <div className="flex w-[38%] h-[80%] justify-center items-center l md:h-[100%]">
             <div className=" h-[80%]  lg:h-[90%] profile w-[95%] rounded-[30px] rotate-[-1deg]">
               <div
                 style={{
-                  background: `url(${profile})`,
+                  background: `url(${profile1})`,
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
                 }}
-                className="h-[100%] bg-slate-200 w-[100%] rounded-[30px] transition ease-in-out delay-150 duration-300 hover:rotate-2 rotate-[9deg]"
+                className="h-[100%] bg-slate-200 w-[100%] rounded-[30px] transition bg-cover
+                 ease-in-out delay-150 duration-300 hover:rotate-2 rotate-[9deg] backDrop"
               ></div>
             </div>
           </div>

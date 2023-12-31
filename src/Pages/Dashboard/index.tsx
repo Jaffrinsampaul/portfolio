@@ -40,7 +40,7 @@ const DashBoard = () => {
         <Skill />
       </div>
       <div
-        className="h-[55vh] xl:h-[80vh]  lg:h-[60vh] sm:w-[100%] md:w-[75%] lg:w-[90%] w-[90%] flex justify-center items-center"
+        className="h-[55vh] xl:h-[80vh] lg:h-[60vh] sm:w-[85%] md:w-[75%] lg:w-[90%] w-[90%] flex justify-center items-center"
         id="Experience"
       >
         <Experience />

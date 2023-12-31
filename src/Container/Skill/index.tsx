@@ -19,15 +19,16 @@ const Skill = () => {
         </div>
         <div className="flex justify-start items-center">
           <div className="flex flex-wrap justify-evenly items-start w-[100%] lg:w-[80%] gap-4 sm:min-w-full sm:gap-0 pt-[20px]">
-            {[...TECH_SKILL].map((role) => {
+            {[...TECH_SKILL].map((obj) => {
               return (
                 <div
-                  className="sm:w-[100px] 2xl:w-[200px] h-[100px] flex justify-center w-[100px] 
+                  className="sm:w-[100px] 2xl:w-[150px] h-[100px] flex justify-center w-[100px] 
                 items-center rounded-[25px]  hover:bg-[#2c2c6c] hover:border-[1px]
-                 hover:border-[#4db5ff] transition ease-in-out duration-300"
+                 hover:border-[#4db5ff] transition ease-in-out duration-300 "
+                 title={obj.title}
                 >
                   <img
-                    src={role}
+                    src={obj.icons}
                     className="h-[35px] sm:h-[40px] md:h-[45px] lg:h-[50px]"
                     // style={{ height: "49px" }}
                   />

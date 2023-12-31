@@ -17,7 +17,7 @@ import {
 } from "../Assets";
 
 export const ABOUT_CARD = [
-  { img: ribbon, title: "Experience", subTitle: "1.6 year" },
+  { img: ribbon, title: "Experience", subTitle: "1.8 year" },
   { img: folder, title: "Projects", subTitle: "Completed 4 Projects" },
 ];
 
@@ -110,17 +110,17 @@ export const experienceDetails = [
 export const mailSubject = "Let's Connect";
 
 export const TECH_SKILL = [
-  Html,
-  Css,
-  Javascript,
-  Typescript,
-  React,
-  Redux,
-  Next,
-  Tailwind,
-  Nest,
-  Postgresql,
-  Github,
+  {icons: Html, title: "html"},
+  {icons: Css, title: "css"},
+  {icons:Javascript, title: "javascript"},
+  {icons: Typescript, title: "typescript"},
+  {icons: React, title: "react"},
+  {icons: Redux, title: "redux"},
+  {icons: Next, title: "Next"},
+  {icons: Tailwind, title: "tailwind css"},
+  {icons: Nest, title: "nest js"},
+  {icons: Postgresql, title: "postgress"},
+  {icons: Github, title: "github"},
 ];
 
 export const HEADER_DETAILS = {

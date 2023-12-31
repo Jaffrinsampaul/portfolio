@@ -22,6 +22,7 @@ import downloadCv from "./Icons/png/cvDownload.png";
 
 import abs from "./Images/jpeg-jpg/abs.jpeg";
 import profile from "./Images/png/profile.png";
+import profile1 from "./Images/jpeg-jpg/profile1.jpeg"
 
 // tech skill
 import Html from "./Icons/tech/html.png";
@@ -71,4 +72,5 @@ export {
   cv,
   mail,
   downloadCv,
+  profile1
 };
